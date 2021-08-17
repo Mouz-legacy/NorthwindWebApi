@@ -1,0 +1,15 @@
+C:\Users\strel\source\repos\Northwind.Services.EntityFrameworkCore\bin\Debug\net5.0\Northwind.Services.EntityFrameworkCore.deps.json
+C:\Users\strel\source\repos\Northwind.Services.EntityFrameworkCore\bin\Debug\net5.0\Northwind.Services.EntityFrameworkCore.dll
+C:\Users\strel\source\repos\Northwind.Services.EntityFrameworkCore\bin\Debug\net5.0\ref\Northwind.Services.EntityFrameworkCore.dll
+C:\Users\strel\source\repos\Northwind.Services.EntityFrameworkCore\bin\Debug\net5.0\Northwind.Services.EntityFrameworkCore.pdb
+C:\Users\strel\source\repos\Northwind.Services.EntityFrameworkCore\obj\Debug\net5.0\Northwind.Services.EntityFrameworkCore.csproj.AssemblyReference.cache
+C:\Users\strel\source\repos\Northwind.Services.EntityFrameworkCore\obj\Debug\net5.0\Northwind.Services.EntityFrameworkCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\strel\source\repos\Northwind.Services.EntityFrameworkCore\obj\Debug\net5.0\Northwind.Services.EntityFrameworkCore.AssemblyInfoInputs.cache
+C:\Users\strel\source\repos\Northwind.Services.EntityFrameworkCore\obj\Debug\net5.0\Northwind.Services.EntityFrameworkCore.AssemblyInfo.cs
+C:\Users\strel\source\repos\Northwind.Services.EntityFrameworkCore\obj\Debug\net5.0\Northwind.Services.EntityFrameworkCore.csproj.CoreCompileInputs.cache
+C:\Users\strel\source\repos\Northwind.Services.EntityFrameworkCore\obj\Debug\net5.0\Northwind.Services.EntityFrameworkCore.csproj.CopyComplete
+C:\Users\strel\source\repos\Northwind.Services.EntityFrameworkCore\obj\Debug\net5.0\Northwind.Services.EntityFrameworkCore.dll
+C:\Users\strel\source\repos\Northwind.Services.EntityFrameworkCore\obj\Debug\net5.0\ref\Northwind.Services.EntityFrameworkCore.dll
+C:\Users\strel\source\repos\Northwind.Services.EntityFrameworkCore\obj\Debug\net5.0\Northwind.Services.EntityFrameworkCore.pdb
+C:\Users\strel\source\repos\Northwind.Services.EntityFrameworkCore\bin\Debug\net5.0\Northwind.Services.dll
+C:\Users\strel\source\repos\Northwind.Services.EntityFrameworkCore\bin\Debug\net5.0\Northwind.Services.pdb

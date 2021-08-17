@@ -1,0 +1,17 @@
+C:\Users\strel\source\repos\Northwind.Services.DataAccess\obj\Debug\net5.0\Northwind.Services.DataAccess.csproj.AssemblyReference.cache
+C:\Users\strel\source\repos\Northwind.Services.DataAccess\obj\Debug\net5.0\Northwind.Services.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\strel\source\repos\Northwind.Services.DataAccess\obj\Debug\net5.0\Northwind.Services.DataAccess.AssemblyInfoInputs.cache
+C:\Users\strel\source\repos\Northwind.Services.DataAccess\obj\Debug\net5.0\Northwind.Services.DataAccess.AssemblyInfo.cs
+C:\Users\strel\source\repos\Northwind.Services.DataAccess\obj\Debug\net5.0\Northwind.Services.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\strel\source\repos\Northwind.Services.DataAccess\bin\Debug\net5.0\Northwind.Services.DataAccess.deps.json
+C:\Users\strel\source\repos\Northwind.Services.DataAccess\bin\Debug\net5.0\Northwind.Services.DataAccess.dll
+C:\Users\strel\source\repos\Northwind.Services.DataAccess\bin\Debug\net5.0\ref\Northwind.Services.DataAccess.dll
+C:\Users\strel\source\repos\Northwind.Services.DataAccess\bin\Debug\net5.0\Northwind.Services.DataAccess.pdb
+C:\Users\strel\source\repos\Northwind.Services.DataAccess\bin\Debug\net5.0\Northwind.DataAccess.dll
+C:\Users\strel\source\repos\Northwind.Services.DataAccess\bin\Debug\net5.0\Northwind.DataAccess.pdb
+C:\Users\strel\source\repos\Northwind.Services.DataAccess\obj\Debug\net5.0\Northwind.Services.DataAccess.csproj.CopyComplete
+C:\Users\strel\source\repos\Northwind.Services.DataAccess\obj\Debug\net5.0\Northwind.Services.DataAccess.dll
+C:\Users\strel\source\repos\Northwind.Services.DataAccess\obj\Debug\net5.0\ref\Northwind.Services.DataAccess.dll
+C:\Users\strel\source\repos\Northwind.Services.DataAccess\obj\Debug\net5.0\Northwind.Services.DataAccess.pdb
+C:\Users\strel\source\repos\Northwind.Services.DataAccess\bin\Debug\net5.0\Northwind.Services.dll
+C:\Users\strel\source\repos\Northwind.Services.DataAccess\bin\Debug\net5.0\Northwind.Services.pdb

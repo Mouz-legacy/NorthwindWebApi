@@ -1,0 +1,11 @@
+C:\Users\strel\source\repos\Nortwind.Services\bin\Debug\net5.0\Nortwind.Services.deps.json
+C:\Users\strel\source\repos\Nortwind.Services\bin\Debug\net5.0\Nortwind.Services.dll
+C:\Users\strel\source\repos\Nortwind.Services\bin\Debug\net5.0\ref\Nortwind.Services.dll
+C:\Users\strel\source\repos\Nortwind.Services\bin\Debug\net5.0\Nortwind.Services.pdb
+C:\Users\strel\source\repos\Nortwind.Services\obj\Debug\net5.0\Nortwind.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\strel\source\repos\Nortwind.Services\obj\Debug\net5.0\Nortwind.Services.AssemblyInfoInputs.cache
+C:\Users\strel\source\repos\Nortwind.Services\obj\Debug\net5.0\Nortwind.Services.AssemblyInfo.cs
+C:\Users\strel\source\repos\Nortwind.Services\obj\Debug\net5.0\Nortwind.Services.csproj.CoreCompileInputs.cache
+C:\Users\strel\source\repos\Nortwind.Services\obj\Debug\net5.0\Nortwind.Services.dll
+C:\Users\strel\source\repos\Nortwind.Services\obj\Debug\net5.0\ref\Nortwind.Services.dll
+C:\Users\strel\source\repos\Nortwind.Services\obj\Debug\net5.0\Nortwind.Services.pdb
