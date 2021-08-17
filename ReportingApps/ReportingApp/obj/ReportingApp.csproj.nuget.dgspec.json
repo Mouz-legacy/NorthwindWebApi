@@ -1,0 +1,404 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\EpamTraining\\ReportingApps\\ReportingApp\\ReportingApp.csproj": {}
+  },
+  "projects": {
+    "D:\\EpamTraining\\ReportingApps\\Northwind.CurrencyServices\\Northwind.CurrencyServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\EpamTraining\\ReportingApps\\Northwind.CurrencyServices\\Northwind.CurrencyServices.csproj",
+        "projectName": "Northwind.CurrencyServices",
+        "projectPath": "D:\\EpamTraining\\ReportingApps\\Northwind.CurrencyServices\\Northwind.CurrencyServices.csproj",
+        "packagesPath": "C:\\Users\\strel\\.nuget\\packages\\",
+        "outputPath": "D:\\EpamTraining\\ReportingApps\\Northwind.CurrencyServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\strel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices.OData\\Northwind.ReportingServices.OData.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices.OData\\Northwind.ReportingServices.OData.csproj",
+        "projectName": "Northwind.ReportingServices.OData",
+        "projectPath": "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices.OData\\Northwind.ReportingServices.OData.csproj",
+        "packagesPath": "C:\\Users\\strel\\.nuget\\packages\\",
+        "outputPath": "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices.OData\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\strel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\EpamTraining\\ReportingApps\\Northwind.CurrencyServices\\Northwind.CurrencyServices.csproj": {
+                "projectPath": "D:\\EpamTraining\\ReportingApps\\Northwind.CurrencyServices\\Northwind.CurrencyServices.csproj"
+              },
+              "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices\\Northwind.ReportingServices.csproj": {
+                "projectPath": "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices\\Northwind.ReportingServices.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.2, )"
+            },
+            "Microsoft.Data.Edm": {
+              "target": "Package",
+              "version": "[5.8.4, )"
+            },
+            "Microsoft.Data.OData": {
+              "target": "Package",
+              "version": "[5.8.4, )"
+            },
+            "Microsoft.Data.Services.Client": {
+              "target": "Package",
+              "version": "[5.8.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Spatial": {
+              "target": "Package",
+              "version": "[5.8.4, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices.SqlService\\Northwind.ReportingServices.SqlService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices.SqlService\\Northwind.ReportingServices.SqlService.csproj",
+        "projectName": "Northwind.ReportingServices.SqlService",
+        "projectPath": "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices.SqlService\\Northwind.ReportingServices.SqlService.csproj",
+        "packagesPath": "C:\\Users\\strel\\.nuget\\packages\\",
+        "outputPath": "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices.SqlService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\strel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices\\Northwind.ReportingServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices\\Northwind.ReportingServices.csproj",
+        "projectName": "Northwind.ReportingServices",
+        "projectPath": "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices\\Northwind.ReportingServices.csproj",
+        "packagesPath": "C:\\Users\\strel\\.nuget\\packages\\",
+        "outputPath": "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\strel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\EpamTraining\\ReportingApps\\Northwind.CurrencyServices\\Northwind.CurrencyServices.csproj": {
+                "projectPath": "D:\\EpamTraining\\ReportingApps\\Northwind.CurrencyServices\\Northwind.CurrencyServices.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.2, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\EpamTraining\\ReportingApps\\ReportingApp\\ReportingApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\EpamTraining\\ReportingApps\\ReportingApp\\ReportingApp.csproj",
+        "projectName": "ReportingApp",
+        "projectPath": "D:\\EpamTraining\\ReportingApps\\ReportingApp\\ReportingApp.csproj",
+        "packagesPath": "C:\\Users\\strel\\.nuget\\packages\\",
+        "outputPath": "D:\\EpamTraining\\ReportingApps\\ReportingApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\strel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\EpamTraining\\ReportingApps\\Northwind.CurrencyServices\\Northwind.CurrencyServices.csproj": {
+                "projectPath": "D:\\EpamTraining\\ReportingApps\\Northwind.CurrencyServices\\Northwind.CurrencyServices.csproj"
+              },
+              "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices.OData\\Northwind.ReportingServices.OData.csproj": {
+                "projectPath": "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices.OData\\Northwind.ReportingServices.OData.csproj"
+              },
+              "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices.SqlService\\Northwind.ReportingServices.SqlService.csproj": {
+                "projectPath": "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices.SqlService\\Northwind.ReportingServices.SqlService.csproj"
+              },
+              "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices\\Northwind.ReportingServices.csproj": {
+                "projectPath": "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices\\Northwind.ReportingServices.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

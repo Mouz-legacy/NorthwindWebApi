@@ -1,0 +1,12 @@
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices.SqlService\bin\Debug\net5.0\Northwind.ReportingServices.SqlService.deps.json
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices.SqlService\bin\Debug\net5.0\Northwind.ReportingServices.SqlService.dll
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices.SqlService\bin\Debug\net5.0\ref\Northwind.ReportingServices.SqlService.dll
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices.SqlService\bin\Debug\net5.0\Northwind.ReportingServices.SqlService.pdb
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices.SqlService\obj\Debug\net5.0\Northwind.ReportingServices.SqlService.csproj.AssemblyReference.cache
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices.SqlService\obj\Debug\net5.0\Northwind.ReportingServices.SqlService.GeneratedMSBuildEditorConfig.editorconfig
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices.SqlService\obj\Debug\net5.0\Northwind.ReportingServices.SqlService.AssemblyInfoInputs.cache
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices.SqlService\obj\Debug\net5.0\Northwind.ReportingServices.SqlService.AssemblyInfo.cs
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices.SqlService\obj\Debug\net5.0\Northwind.ReportingServices.SqlService.csproj.CoreCompileInputs.cache
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices.SqlService\obj\Debug\net5.0\Northwind.ReportingServices.SqlService.dll
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices.SqlService\obj\Debug\net5.0\ref\Northwind.ReportingServices.SqlService.dll
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices.SqlService\obj\Debug\net5.0\Northwind.ReportingServices.SqlService.pdb

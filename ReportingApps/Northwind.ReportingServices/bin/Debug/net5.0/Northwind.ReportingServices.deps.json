@@ -1,0 +1,127 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Northwind.ReportingServices/1.0.0": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.FxCopAnalyzers": "3.3.2",
+          "Northwind.CurrencyServices": "1.0.0",
+          "StyleCop.Analyzers": "1.1.118"
+        },
+        "runtime": {
+          "Northwind.ReportingServices.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.FxCopAnalyzers/3.3.2": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.VersionCheckAnalyzer": "3.3.2",
+          "Microsoft.CodeQuality.Analyzers": "3.3.2",
+          "Microsoft.NetCore.Analyzers": "3.3.2",
+          "Microsoft.NetFramework.Analyzers": "3.3.2"
+        }
+      },
+      "Microsoft.CodeAnalysis.VersionCheckAnalyzer/3.3.2": {},
+      "Microsoft.CodeQuality.Analyzers/3.3.2": {},
+      "Microsoft.NetCore.Analyzers/3.3.2": {},
+      "Microsoft.NetFramework.Analyzers/3.3.2": {},
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "StyleCop.Analyzers/1.1.118": {},
+      "System.Text.Json/5.0.2": {
+        "runtime": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.521.16609"
+          }
+        }
+      },
+      "Northwind.CurrencyServices/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "System.Text.Json": "5.0.2"
+        },
+        "runtime": {
+          "Northwind.CurrencyServices.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Northwind.ReportingServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.CodeAnalysis.FxCopAnalyzers/3.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QlaP2SgpkiV5fnDgC1WwG3blfXIvz5WSPkA/R/AjKRwOLTGU1YLE3PArkvTz1ZtLCuXs29Qp3iY2fja7wF0iEg==",
+      "path": "microsoft.codeanalysis.fxcopanalyzers/3.3.2",
+      "hashPath": "microsoft.codeanalysis.fxcopanalyzers.3.3.2.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.VersionCheckAnalyzer/3.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KTqeVJjGfwDX7/AGDgBXErYX/8Etjwu8Zg2TgmmjVPZReVZk4KLv5fpEiTtoBXis3AO+OM/Qu4cQfz828RSmDQ==",
+      "path": "microsoft.codeanalysis.versioncheckanalyzer/3.3.2",
+      "hashPath": "microsoft.codeanalysis.versioncheckanalyzer.3.3.2.nupkg.sha512"
+    },
+    "Microsoft.CodeQuality.Analyzers/3.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WwR96abpowLKCJ/+hREuBu58zbTBCiFLQx5FjAUAYrgtuIQsg+jRtv4n9gKw6zxydnO+jd5aFJB6H+eqGqQufw==",
+      "path": "microsoft.codequality.analyzers/3.3.2",
+      "hashPath": "microsoft.codequality.analyzers.3.3.2.nupkg.sha512"
+    },
+    "Microsoft.NetCore.Analyzers/3.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L9lU2E9SaK8znn8ZkstOx8jjpYmsBTvt3xIW6btPM/Fi8m7zSK80itHV0p6f23q84uvyXS8ibECjP0Vra99zsQ==",
+      "path": "microsoft.netcore.analyzers/3.3.2",
+      "hashPath": "microsoft.netcore.analyzers.3.3.2.nupkg.sha512"
+    },
+    "Microsoft.NetFramework.Analyzers/3.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NfmC8NoxrRtw2PSmqSu+kVTcsJuMhspxWKbVzrtPxw+O8hjpCPzD0IttCUJclDf36qkmScvvd1BgRHYE17zF9g==",
+      "path": "microsoft.netframework.analyzers/3.3.2",
+      "hashPath": "microsoft.netframework.analyzers.3.3.2.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "StyleCop.Analyzers/1.1.118": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Onx6ovGSqXSK07n/0eM3ZusiNdB6cIlJdabQhWGgJp3Vooy9AaLS/tigeybOJAobqbtggTamoWndz72JscZBvw==",
+      "path": "stylecop.analyzers/1.1.118",
+      "hashPath": "stylecop.analyzers.1.1.118.nupkg.sha512"
+    },
+    "System.Text.Json/5.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I47dVIGiV6SfAyppphxqupertT/5oZkYLDCX6vC3HpOI4ZLjyoKAreUoem2ie6G0RbRuFrlqz/PcTQjfb2DOfQ==",
+      "path": "system.text.json/5.0.2",
+      "hashPath": "system.text.json.5.0.2.nupkg.sha512"
+    },
+    "Northwind.CurrencyServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

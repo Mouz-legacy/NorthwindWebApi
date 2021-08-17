@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Northwind.CurrencyServices</name>
+    </assembly>
+    <members>
+        <member name="T:CountryCurrencyService">
+            <summary>
+            CountryCurrencyService class.
+            </summary>
+        </member>
+        <member name="M:CountryCurrencyService.GetLocalCurrencyByCountry(System.String)">
+            <summary>
+            GetLocalCurrencyByCountry method.
+            </summary>
+            <param name="countryName">Country name.</param>
+            <returns>Local currency.</returns>
+        </member>
+        <member name="T:Northwind.CurrencyServices.CountryCurrency.CountryInformation">
+            <summary>
+            CountryInformation class.
+            </summary>
+        </member>
+        <member name="P:Northwind.CurrencyServices.CountryCurrency.CountryInformation.Name">
+            <summary>
+            Gets or sets country name.
+            </summary>
+        </member>
+        <member name="P:Northwind.CurrencyServices.CountryCurrency.CountryInformation.Currencies">
+            <summary>
+            Gets or sets Currencies.
+            </summary>
+        </member>
+        <member name="T:Northwind.CurrencyServices.CountryCurrency.ICountryCurrencyService">
+            <summary>
+            ICountryCurrencyService interface.
+            </summary>
+        </member>
+        <member name="M:Northwind.CurrencyServices.CountryCurrency.ICountryCurrencyService.GetLocalCurrencyByCountry(System.String)">
+            <summary>
+            GetLocalCurrencyByCountry method.
+            </summary>
+            <param name="countryName">Country name.</param>
+            <returns>Return local currency.</returns>
+        </member>
+        <member name="T:Northwind.CurrencyServices.CurrencyExchange.CurrencyJsonInfo">
+            <summary>
+            CurrencyJsonInfo to store info from json file from currency exchange service. 
+            </summary>
+        </member>
+        <member name="P:Northwind.CurrencyServices.CurrencyExchange.CurrencyJsonInfo.Source">
+            <summary>
+            Gets or sets Service property.
+            </summary>
+        </member>
+        <member name="P:Northwind.CurrencyServices.CurrencyExchange.CurrencyJsonInfo.Quotes">
+            <summary>
+            Gets or sets quotes property.
+            </summary>
+        </member>
+        <member name="T:Northwind.CurrencyServices.CurrencyExchange.ICurrencyExchangeService">
+            <summary>
+            ICurrencyExchangeService interface.
+            </summary>
+        </member>
+        <member name="M:Northwind.CurrencyServices.CurrencyExchange.ICurrencyExchangeService.GetCurrencyExchangeRate(System.String,System.String)">
+            <summary>
+            GetCurrencyExchangeRate method.
+            </summary>
+            <param name="baseCurrency">Base currency.</param>
+            <param name="exchangeCurrency">Exchange currency.</param>
+            <returns>Decimal value.</returns>
+        </member>
+        <member name="T:LocalCurrency">
+            <summary>
+            LocalCurrency class.
+            </summary>
+        </member>
+        <member name="P:LocalCurrency.CountryName">
+            <summary>
+            Gets or sets CountryName.
+            </summary>
+        </member>
+        <member name="P:LocalCurrency.CurrencyCode">
+            <summary>
+            Gets or sets CurrencyCode.
+            </summary>
+        </member>
+        <member name="P:LocalCurrency.CurrencySymbol">
+            <summary>
+            Gets or sets CurrencySymbol.
+            </summary>
+        </member>
+        <member name="T:CurrencyExchangeService">
+            <summary>
+            CurrencyExchangeService class.
+            </summary>
+        </member>
+        <member name="M:CurrencyExchangeService.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CurrencyExchangeService"/> class.
+            </summary>
+            <param name="accessKey">Access key.</param>
+        </member>
+        <member name="M:CurrencyExchangeService.GetCurrencyExchangeRate(System.String,System.String)">
+            <summary>
+            GetCurrencyExchangeRate method.
+            </summary>
+            <param name="baseCurrency">Base currency.</param>
+            <param name="exchangeCurrency">Exchange currency.</param>
+            <returns>Task decimal values.</returns>
+        </member>
+    </members>
+</doc>

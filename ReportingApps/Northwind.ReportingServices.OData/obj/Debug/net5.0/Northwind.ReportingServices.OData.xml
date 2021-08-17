@@ -1,0 +1,1800 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Northwind.ReportingServices.OData</name>
+    </assembly>
+    <members>
+        <member name="T:NorthwindModel.NorthwindEntities">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindEntities.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.#ctor(System.Uri)">
+            <summary>
+            Инициализируйте новый объект NorthwindEntities.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Categories">
+            <summary>
+            В схеме отсутствуют комментарии для Categories.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.CustomerDemographics">
+            <summary>
+            В схеме отсутствуют комментарии для CustomerDemographics.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Customers">
+            <summary>
+            В схеме отсутствуют комментарии для Customers.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Employees">
+            <summary>
+            В схеме отсутствуют комментарии для Employees.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Order_Details">
+            <summary>
+            В схеме отсутствуют комментарии для Order_Details.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Orders">
+            <summary>
+            В схеме отсутствуют комментарии для Orders.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Products">
+            <summary>
+            В схеме отсутствуют комментарии для Products.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Regions">
+            <summary>
+            В схеме отсутствуют комментарии для Regions.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Shippers">
+            <summary>
+            В схеме отсутствуют комментарии для Shippers.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Suppliers">
+            <summary>
+            В схеме отсутствуют комментарии для Suppliers.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Territories">
+            <summary>
+            В схеме отсутствуют комментарии для Territories.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Alphabetical_list_of_products">
+            <summary>
+            В схеме отсутствуют комментарии для Alphabetical_list_of_products.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Category_Sales_for_1997">
+            <summary>
+            В схеме отсутствуют комментарии для Category_Sales_for_1997.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Current_Product_Lists">
+            <summary>
+            В схеме отсутствуют комментарии для Current_Product_Lists.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Customer_and_Suppliers_by_Cities">
+            <summary>
+            В схеме отсутствуют комментарии для Customer_and_Suppliers_by_Cities.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Invoices">
+            <summary>
+            В схеме отсутствуют комментарии для Invoices.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Order_Details_Extendeds">
+            <summary>
+            В схеме отсутствуют комментарии для Order_Details_Extendeds.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Order_Subtotals">
+            <summary>
+            В схеме отсутствуют комментарии для Order_Subtotals.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Orders_Qries">
+            <summary>
+            В схеме отсутствуют комментарии для Orders_Qries.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Product_Sales_for_1997">
+            <summary>
+            В схеме отсутствуют комментарии для Product_Sales_for_1997.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Products_Above_Average_Prices">
+            <summary>
+            В схеме отсутствуют комментарии для Products_Above_Average_Prices.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Products_by_Categories">
+            <summary>
+            В схеме отсутствуют комментарии для Products_by_Categories.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Sales_by_Categories">
+            <summary>
+            В схеме отсутствуют комментарии для Sales_by_Categories.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Sales_Totals_by_Amounts">
+            <summary>
+            В схеме отсутствуют комментарии для Sales_Totals_by_Amounts.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Summary_of_Sales_by_Quarters">
+            <summary>
+            В схеме отсутствуют комментарии для Summary_of_Sales_by_Quarters.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.NorthwindEntities.Summary_of_Sales_by_Years">
+            <summary>
+            В схеме отсутствуют комментарии для Summary_of_Sales_by_Years.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToCategories(NorthwindModel.Category)">
+            <summary>
+            В схеме отсутствуют комментарии для Categories.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToCustomerDemographics(NorthwindModel.CustomerDemographic)">
+            <summary>
+            В схеме отсутствуют комментарии для CustomerDemographics.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToCustomers(NorthwindModel.Customer)">
+            <summary>
+            В схеме отсутствуют комментарии для Customers.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToEmployees(NorthwindModel.Employee)">
+            <summary>
+            В схеме отсутствуют комментарии для Employees.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToOrder_Details(NorthwindModel.Order_Detail)">
+            <summary>
+            В схеме отсутствуют комментарии для Order_Details.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToOrders(NorthwindModel.Order)">
+            <summary>
+            В схеме отсутствуют комментарии для Orders.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToProducts(NorthwindModel.Product)">
+            <summary>
+            В схеме отсутствуют комментарии для Products.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToRegions(NorthwindModel.Region)">
+            <summary>
+            В схеме отсутствуют комментарии для Regions.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToShippers(NorthwindModel.Shipper)">
+            <summary>
+            В схеме отсутствуют комментарии для Shippers.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToSuppliers(NorthwindModel.Supplier)">
+            <summary>
+            В схеме отсутствуют комментарии для Suppliers.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToTerritories(NorthwindModel.Territory)">
+            <summary>
+            В схеме отсутствуют комментарии для Territories.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToAlphabetical_list_of_products(NorthwindModel.Alphabetical_list_of_product)">
+            <summary>
+            В схеме отсутствуют комментарии для Alphabetical_list_of_products.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToCategory_Sales_for_1997(NorthwindModel.Category_Sales_for_1997)">
+            <summary>
+            В схеме отсутствуют комментарии для Category_Sales_for_1997.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToCurrent_Product_Lists(NorthwindModel.Current_Product_List)">
+            <summary>
+            В схеме отсутствуют комментарии для Current_Product_Lists.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToCustomer_and_Suppliers_by_Cities(NorthwindModel.Customer_and_Suppliers_by_City)">
+            <summary>
+            В схеме отсутствуют комментарии для Customer_and_Suppliers_by_Cities.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToInvoices(NorthwindModel.Invoice)">
+            <summary>
+            В схеме отсутствуют комментарии для Invoices.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToOrder_Details_Extendeds(NorthwindModel.Order_Details_Extended)">
+            <summary>
+            В схеме отсутствуют комментарии для Order_Details_Extendeds.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToOrder_Subtotals(NorthwindModel.Order_Subtotal)">
+            <summary>
+            В схеме отсутствуют комментарии для Order_Subtotals.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToOrders_Qries(NorthwindModel.Orders_Qry)">
+            <summary>
+            В схеме отсутствуют комментарии для Orders_Qries.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToProduct_Sales_for_1997(NorthwindModel.Product_Sales_for_1997)">
+            <summary>
+            В схеме отсутствуют комментарии для Product_Sales_for_1997.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToProducts_Above_Average_Prices(NorthwindModel.Products_Above_Average_Price)">
+            <summary>
+            В схеме отсутствуют комментарии для Products_Above_Average_Prices.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToProducts_by_Categories(NorthwindModel.Products_by_Category)">
+            <summary>
+            В схеме отсутствуют комментарии для Products_by_Categories.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToSales_by_Categories(NorthwindModel.Sales_by_Category)">
+            <summary>
+            В схеме отсутствуют комментарии для Sales_by_Categories.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToSales_Totals_by_Amounts(NorthwindModel.Sales_Totals_by_Amount)">
+            <summary>
+            В схеме отсутствуют комментарии для Sales_Totals_by_Amounts.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToSummary_of_Sales_by_Quarters(NorthwindModel.Summary_of_Sales_by_Quarter)">
+            <summary>
+            В схеме отсутствуют комментарии для Summary_of_Sales_by_Quarters.
+            </summary>
+        </member>
+        <member name="M:NorthwindModel.NorthwindEntities.AddToSummary_of_Sales_by_Years(NorthwindModel.Summary_of_Sales_by_Year)">
+            <summary>
+            В схеме отсутствуют комментарии для Summary_of_Sales_by_Years.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Category">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Category.
+            </summary>
+            <KeyProperties>
+            CategoryID
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Category.CreateCategory(System.Int32,System.String)">
+            <summary>
+            Создайте новый объект Category.
+            </summary>
+            <param name="categoryID">Начальное значение CategoryID.</param>
+            <param name="categoryName">Начальное значение CategoryName.</param>
+        </member>
+        <member name="P:NorthwindModel.Category.CategoryID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CategoryID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Category.CategoryName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CategoryName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Category.Description">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Description.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Category.Picture">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Picture.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Category.Products">
+            <summary>
+            В схеме отсутствуют комментарии для Products.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.CustomerDemographic">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.CustomerDemographic.
+            </summary>
+            <KeyProperties>
+            CustomerTypeID
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.CustomerDemographic.CreateCustomerDemographic(System.String)">
+            <summary>
+            Создайте новый объект CustomerDemographic.
+            </summary>
+            <param name="customerTypeID">Начальное значение CustomerTypeID.</param>
+        </member>
+        <member name="P:NorthwindModel.CustomerDemographic.CustomerTypeID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CustomerTypeID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.CustomerDemographic.CustomerDesc">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CustomerDesc.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.CustomerDemographic.Customers">
+            <summary>
+            В схеме отсутствуют комментарии для Customers.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Customer">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Customer.
+            </summary>
+            <KeyProperties>
+            CustomerID
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Customer.CreateCustomer(System.String,System.String)">
+            <summary>
+            Создайте новый объект Customer.
+            </summary>
+            <param name="customerID">Начальное значение CustomerID.</param>
+            <param name="companyName">Начальное значение CompanyName.</param>
+        </member>
+        <member name="P:NorthwindModel.Customer.CustomerID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CustomerID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Customer.CompanyName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CompanyName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Customer.ContactName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ContactName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Customer.ContactTitle">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ContactTitle.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Customer.Address">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Address.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Customer.City">
+            <summary>
+            В схеме отсутствуют комментарии для свойства City.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Customer.Region">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Region.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Customer.PostalCode">
+            <summary>
+            В схеме отсутствуют комментарии для свойства PostalCode.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Customer.Country">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Country.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Customer.Phone">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Phone.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Customer.Fax">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Fax.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Customer.Orders">
+            <summary>
+            В схеме отсутствуют комментарии для Orders.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Customer.CustomerDemographics">
+            <summary>
+            В схеме отсутствуют комментарии для CustomerDemographics.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Employee">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Employee.
+            </summary>
+            <KeyProperties>
+            EmployeeID
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Employee.CreateEmployee(System.Int32,System.String,System.String)">
+            <summary>
+            Создайте новый объект Employee.
+            </summary>
+            <param name="employeeID">Начальное значение EmployeeID.</param>
+            <param name="lastName">Начальное значение LastName.</param>
+            <param name="firstName">Начальное значение FirstName.</param>
+        </member>
+        <member name="P:NorthwindModel.Employee.EmployeeID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства EmployeeID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.LastName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства LastName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.FirstName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства FirstName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.Title">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Title.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.TitleOfCourtesy">
+            <summary>
+            В схеме отсутствуют комментарии для свойства TitleOfCourtesy.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.BirthDate">
+            <summary>
+            В схеме отсутствуют комментарии для свойства BirthDate.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.HireDate">
+            <summary>
+            В схеме отсутствуют комментарии для свойства HireDate.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.Address">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Address.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.City">
+            <summary>
+            В схеме отсутствуют комментарии для свойства City.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.Region">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Region.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.PostalCode">
+            <summary>
+            В схеме отсутствуют комментарии для свойства PostalCode.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.Country">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Country.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.HomePhone">
+            <summary>
+            В схеме отсутствуют комментарии для свойства HomePhone.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.Extension">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Extension.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.Photo">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Photo.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.Notes">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Notes.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.ReportsTo">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ReportsTo.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.PhotoPath">
+            <summary>
+            В схеме отсутствуют комментарии для свойства PhotoPath.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.Employees1">
+            <summary>
+            В схеме отсутствуют комментарии для Employees1.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.Employee1">
+            <summary>
+            В схеме отсутствуют комментарии для Employee1.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.Orders">
+            <summary>
+            В схеме отсутствуют комментарии для Orders.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Employee.Territories">
+            <summary>
+            В схеме отсутствуют комментарии для Territories.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Order_Detail">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Order_Detail.
+            </summary>
+            <KeyProperties>
+            OrderID
+            ProductID
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Order_Detail.CreateOrder_Detail(System.Int32,System.Int32,System.Decimal,System.Int16,System.Single)">
+            <summary>
+            Создайте новый объект Order_Detail.
+            </summary>
+            <param name="orderID">Начальное значение OrderID.</param>
+            <param name="productID">Начальное значение ProductID.</param>
+            <param name="unitPrice">Начальное значение UnitPrice.</param>
+            <param name="quantity">Начальное значение Quantity.</param>
+            <param name="discount">Начальное значение Discount.</param>
+        </member>
+        <member name="P:NorthwindModel.Order_Detail.OrderID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства OrderID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order_Detail.ProductID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ProductID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order_Detail.UnitPrice">
+            <summary>
+            В схеме отсутствуют комментарии для свойства UnitPrice.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order_Detail.Quantity">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Quantity.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order_Detail.Discount">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Discount.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order_Detail.Order">
+            <summary>
+            В схеме отсутствуют комментарии для Order.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order_Detail.Product">
+            <summary>
+            В схеме отсутствуют комментарии для Product.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Order">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Order.
+            </summary>
+            <KeyProperties>
+            OrderID
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Order.CreateOrder(System.Int32)">
+            <summary>
+            Создайте новый объект Order.
+            </summary>
+            <param name="orderID">Начальное значение OrderID.</param>
+        </member>
+        <member name="P:NorthwindModel.Order.OrderID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства OrderID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order.CustomerID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CustomerID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order.EmployeeID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства EmployeeID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order.OrderDate">
+            <summary>
+            В схеме отсутствуют комментарии для свойства OrderDate.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order.RequiredDate">
+            <summary>
+            В схеме отсутствуют комментарии для свойства RequiredDate.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order.ShippedDate">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShippedDate.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order.ShipVia">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipVia.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order.Freight">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Freight.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order.ShipName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order.ShipAddress">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipAddress.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order.ShipCity">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipCity.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order.ShipRegion">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipRegion.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order.ShipPostalCode">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipPostalCode.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order.ShipCountry">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipCountry.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order.Customer">
+            <summary>
+            В схеме отсутствуют комментарии для Customer.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order.Employee">
+            <summary>
+            В схеме отсутствуют комментарии для Employee.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order.Order_Details">
+            <summary>
+            В схеме отсутствуют комментарии для Order_Details.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order.Shipper">
+            <summary>
+            В схеме отсутствуют комментарии для Shipper.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Product">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Product.
+            </summary>
+            <KeyProperties>
+            ProductID
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Product.CreateProduct(System.Int32,System.String,System.Boolean)">
+            <summary>
+            Создайте новый объект Product.
+            </summary>
+            <param name="productID">Начальное значение ProductID.</param>
+            <param name="productName">Начальное значение ProductName.</param>
+            <param name="discontinued">Начальное значение Discontinued.</param>
+        </member>
+        <member name="P:NorthwindModel.Product.ProductID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ProductID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Product.ProductName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ProductName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Product.SupplierID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства SupplierID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Product.CategoryID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CategoryID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Product.QuantityPerUnit">
+            <summary>
+            В схеме отсутствуют комментарии для свойства QuantityPerUnit.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Product.UnitPrice">
+            <summary>
+            В схеме отсутствуют комментарии для свойства UnitPrice.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Product.UnitsInStock">
+            <summary>
+            В схеме отсутствуют комментарии для свойства UnitsInStock.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Product.UnitsOnOrder">
+            <summary>
+            В схеме отсутствуют комментарии для свойства UnitsOnOrder.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Product.ReorderLevel">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ReorderLevel.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Product.Discontinued">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Discontinued.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Product.Category">
+            <summary>
+            В схеме отсутствуют комментарии для Category.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Product.Order_Details">
+            <summary>
+            В схеме отсутствуют комментарии для Order_Details.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Product.Supplier">
+            <summary>
+            В схеме отсутствуют комментарии для Supplier.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Region">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Region.
+            </summary>
+            <KeyProperties>
+            RegionID
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Region.CreateRegion(System.Int32,System.String)">
+            <summary>
+            Создайте новый объект Region.
+            </summary>
+            <param name="regionID">Начальное значение RegionID.</param>
+            <param name="regionDescription">Начальное значение RegionDescription.</param>
+        </member>
+        <member name="P:NorthwindModel.Region.RegionID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства RegionID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Region.RegionDescription">
+            <summary>
+            В схеме отсутствуют комментарии для свойства RegionDescription.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Region.Territories">
+            <summary>
+            В схеме отсутствуют комментарии для Territories.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Shipper">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Shipper.
+            </summary>
+            <KeyProperties>
+            ShipperID
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Shipper.CreateShipper(System.Int32,System.String)">
+            <summary>
+            Создайте новый объект Shipper.
+            </summary>
+            <param name="shipperID">Начальное значение ShipperID.</param>
+            <param name="companyName">Начальное значение CompanyName.</param>
+        </member>
+        <member name="P:NorthwindModel.Shipper.ShipperID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipperID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Shipper.CompanyName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CompanyName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Shipper.Phone">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Phone.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Shipper.Orders">
+            <summary>
+            В схеме отсутствуют комментарии для Orders.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Supplier">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Supplier.
+            </summary>
+            <KeyProperties>
+            SupplierID
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Supplier.CreateSupplier(System.Int32,System.String)">
+            <summary>
+            Создайте новый объект Supplier.
+            </summary>
+            <param name="supplierID">Начальное значение SupplierID.</param>
+            <param name="companyName">Начальное значение CompanyName.</param>
+        </member>
+        <member name="P:NorthwindModel.Supplier.SupplierID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства SupplierID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Supplier.CompanyName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CompanyName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Supplier.ContactName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ContactName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Supplier.ContactTitle">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ContactTitle.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Supplier.Address">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Address.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Supplier.City">
+            <summary>
+            В схеме отсутствуют комментарии для свойства City.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Supplier.Region">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Region.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Supplier.PostalCode">
+            <summary>
+            В схеме отсутствуют комментарии для свойства PostalCode.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Supplier.Country">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Country.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Supplier.Phone">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Phone.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Supplier.Fax">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Fax.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Supplier.HomePage">
+            <summary>
+            В схеме отсутствуют комментарии для свойства HomePage.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Supplier.Products">
+            <summary>
+            В схеме отсутствуют комментарии для Products.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Territory">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Territory.
+            </summary>
+            <KeyProperties>
+            TerritoryID
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Territory.CreateTerritory(System.String,System.String,System.Int32)">
+            <summary>
+            Создайте новый объект Territory.
+            </summary>
+            <param name="territoryID">Начальное значение TerritoryID.</param>
+            <param name="territoryDescription">Начальное значение TerritoryDescription.</param>
+            <param name="regionID">Начальное значение RegionID.</param>
+        </member>
+        <member name="P:NorthwindModel.Territory.TerritoryID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства TerritoryID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Territory.TerritoryDescription">
+            <summary>
+            В схеме отсутствуют комментарии для свойства TerritoryDescription.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Territory.RegionID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства RegionID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Territory.Region">
+            <summary>
+            В схеме отсутствуют комментарии для Region.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Territory.Employees">
+            <summary>
+            В схеме отсутствуют комментарии для Employees.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Alphabetical_list_of_product">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Alphabetical_list_of_product.
+            </summary>
+            <KeyProperties>
+            CategoryName
+            Discontinued
+            ProductID
+            ProductName
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Alphabetical_list_of_product.CreateAlphabetical_list_of_product(System.Int32,System.String,System.Boolean,System.String)">
+            <summary>
+            Создайте новый объект Alphabetical_list_of_product.
+            </summary>
+            <param name="productID">Начальное значение ProductID.</param>
+            <param name="productName">Начальное значение ProductName.</param>
+            <param name="discontinued">Начальное значение Discontinued.</param>
+            <param name="categoryName">Начальное значение CategoryName.</param>
+        </member>
+        <member name="P:NorthwindModel.Alphabetical_list_of_product.ProductID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ProductID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Alphabetical_list_of_product.ProductName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ProductName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Alphabetical_list_of_product.SupplierID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства SupplierID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Alphabetical_list_of_product.CategoryID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CategoryID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Alphabetical_list_of_product.QuantityPerUnit">
+            <summary>
+            В схеме отсутствуют комментарии для свойства QuantityPerUnit.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Alphabetical_list_of_product.UnitPrice">
+            <summary>
+            В схеме отсутствуют комментарии для свойства UnitPrice.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Alphabetical_list_of_product.UnitsInStock">
+            <summary>
+            В схеме отсутствуют комментарии для свойства UnitsInStock.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Alphabetical_list_of_product.UnitsOnOrder">
+            <summary>
+            В схеме отсутствуют комментарии для свойства UnitsOnOrder.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Alphabetical_list_of_product.ReorderLevel">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ReorderLevel.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Alphabetical_list_of_product.Discontinued">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Discontinued.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Alphabetical_list_of_product.CategoryName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CategoryName.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Category_Sales_for_1997">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Category_Sales_for_1997.
+            </summary>
+            <KeyProperties>
+            CategoryName
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Category_Sales_for_1997.CreateCategory_Sales_for_1997(System.String)">
+            <summary>
+            Создайте новый объект Category_Sales_for_1997.
+            </summary>
+            <param name="categoryName">Начальное значение CategoryName.</param>
+        </member>
+        <member name="P:NorthwindModel.Category_Sales_for_1997.CategoryName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CategoryName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Category_Sales_for_1997.CategorySales">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CategorySales.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Current_Product_List">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Current_Product_List.
+            </summary>
+            <KeyProperties>
+            ProductID
+            ProductName
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Current_Product_List.CreateCurrent_Product_List(System.Int32,System.String)">
+            <summary>
+            Создайте новый объект Current_Product_List.
+            </summary>
+            <param name="productID">Начальное значение ProductID.</param>
+            <param name="productName">Начальное значение ProductName.</param>
+        </member>
+        <member name="P:NorthwindModel.Current_Product_List.ProductID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ProductID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Current_Product_List.ProductName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ProductName.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Customer_and_Suppliers_by_City">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Customer_and_Suppliers_by_City.
+            </summary>
+            <KeyProperties>
+            CompanyName
+            Relationship
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Customer_and_Suppliers_by_City.CreateCustomer_and_Suppliers_by_City(System.String,System.String)">
+            <summary>
+            Создайте новый объект Customer_and_Suppliers_by_City.
+            </summary>
+            <param name="companyName">Начальное значение CompanyName.</param>
+            <param name="relationship">Начальное значение Relationship.</param>
+        </member>
+        <member name="P:NorthwindModel.Customer_and_Suppliers_by_City.City">
+            <summary>
+            В схеме отсутствуют комментарии для свойства City.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Customer_and_Suppliers_by_City.CompanyName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CompanyName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Customer_and_Suppliers_by_City.ContactName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ContactName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Customer_and_Suppliers_by_City.Relationship">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Relationship.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Invoice">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Invoice.
+            </summary>
+            <KeyProperties>
+            CustomerName
+            Discount
+            OrderID
+            ProductID
+            ProductName
+            Quantity
+            Salesperson
+            ShipperName
+            UnitPrice
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Invoice.CreateInvoice(System.String,System.String,System.Int32,System.String,System.Int32,System.String,System.Decimal,System.Int16,System.Single)">
+            <summary>
+            Создайте новый объект Invoice.
+            </summary>
+            <param name="customerName">Начальное значение CustomerName.</param>
+            <param name="salesperson">Начальное значение Salesperson.</param>
+            <param name="orderID">Начальное значение OrderID.</param>
+            <param name="shipperName">Начальное значение ShipperName.</param>
+            <param name="productID">Начальное значение ProductID.</param>
+            <param name="productName">Начальное значение ProductName.</param>
+            <param name="unitPrice">Начальное значение UnitPrice.</param>
+            <param name="quantity">Начальное значение Quantity.</param>
+            <param name="discount">Начальное значение Discount.</param>
+        </member>
+        <member name="P:NorthwindModel.Invoice.ShipName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.ShipAddress">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipAddress.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.ShipCity">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipCity.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.ShipRegion">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipRegion.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.ShipPostalCode">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipPostalCode.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.ShipCountry">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipCountry.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.CustomerID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CustomerID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.CustomerName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CustomerName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.Address">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Address.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.City">
+            <summary>
+            В схеме отсутствуют комментарии для свойства City.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.Region">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Region.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.PostalCode">
+            <summary>
+            В схеме отсутствуют комментарии для свойства PostalCode.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.Country">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Country.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.Salesperson">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Salesperson.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.OrderID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства OrderID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.OrderDate">
+            <summary>
+            В схеме отсутствуют комментарии для свойства OrderDate.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.RequiredDate">
+            <summary>
+            В схеме отсутствуют комментарии для свойства RequiredDate.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.ShippedDate">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShippedDate.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.ShipperName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipperName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.ProductID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ProductID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.ProductName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ProductName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.UnitPrice">
+            <summary>
+            В схеме отсутствуют комментарии для свойства UnitPrice.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.Quantity">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Quantity.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.Discount">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Discount.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.ExtendedPrice">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ExtendedPrice.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Invoice.Freight">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Freight.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Order_Details_Extended">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Order_Details_Extended.
+            </summary>
+            <KeyProperties>
+            Discount
+            OrderID
+            ProductID
+            ProductName
+            Quantity
+            UnitPrice
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Order_Details_Extended.CreateOrder_Details_Extended(System.Int32,System.Int32,System.String,System.Decimal,System.Int16,System.Single)">
+            <summary>
+            Создайте новый объект Order_Details_Extended.
+            </summary>
+            <param name="orderID">Начальное значение OrderID.</param>
+            <param name="productID">Начальное значение ProductID.</param>
+            <param name="productName">Начальное значение ProductName.</param>
+            <param name="unitPrice">Начальное значение UnitPrice.</param>
+            <param name="quantity">Начальное значение Quantity.</param>
+            <param name="discount">Начальное значение Discount.</param>
+        </member>
+        <member name="P:NorthwindModel.Order_Details_Extended.OrderID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства OrderID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order_Details_Extended.ProductID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ProductID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order_Details_Extended.ProductName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ProductName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order_Details_Extended.UnitPrice">
+            <summary>
+            В схеме отсутствуют комментарии для свойства UnitPrice.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order_Details_Extended.Quantity">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Quantity.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order_Details_Extended.Discount">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Discount.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order_Details_Extended.ExtendedPrice">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ExtendedPrice.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Order_Subtotal">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Order_Subtotal.
+            </summary>
+            <KeyProperties>
+            OrderID
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Order_Subtotal.CreateOrder_Subtotal(System.Int32)">
+            <summary>
+            Создайте новый объект Order_Subtotal.
+            </summary>
+            <param name="orderID">Начальное значение OrderID.</param>
+        </member>
+        <member name="P:NorthwindModel.Order_Subtotal.OrderID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства OrderID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Order_Subtotal.Subtotal">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Subtotal.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Orders_Qry">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Orders_Qry.
+            </summary>
+            <KeyProperties>
+            CompanyName
+            OrderID
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Orders_Qry.CreateOrders_Qry(System.Int32,System.String)">
+            <summary>
+            Создайте новый объект Orders_Qry.
+            </summary>
+            <param name="orderID">Начальное значение OrderID.</param>
+            <param name="companyName">Начальное значение CompanyName.</param>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.OrderID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства OrderID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.CustomerID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CustomerID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.EmployeeID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства EmployeeID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.OrderDate">
+            <summary>
+            В схеме отсутствуют комментарии для свойства OrderDate.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.RequiredDate">
+            <summary>
+            В схеме отсутствуют комментарии для свойства RequiredDate.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.ShippedDate">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShippedDate.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.ShipVia">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipVia.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.Freight">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Freight.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.ShipName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.ShipAddress">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipAddress.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.ShipCity">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipCity.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.ShipRegion">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipRegion.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.ShipPostalCode">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipPostalCode.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.ShipCountry">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShipCountry.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.CompanyName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CompanyName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.Address">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Address.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.City">
+            <summary>
+            В схеме отсутствуют комментарии для свойства City.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.Region">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Region.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.PostalCode">
+            <summary>
+            В схеме отсутствуют комментарии для свойства PostalCode.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Orders_Qry.Country">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Country.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Product_Sales_for_1997">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Product_Sales_for_1997.
+            </summary>
+            <KeyProperties>
+            CategoryName
+            ProductName
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Product_Sales_for_1997.CreateProduct_Sales_for_1997(System.String,System.String)">
+            <summary>
+            Создайте новый объект Product_Sales_for_1997.
+            </summary>
+            <param name="categoryName">Начальное значение CategoryName.</param>
+            <param name="productName">Начальное значение ProductName.</param>
+        </member>
+        <member name="P:NorthwindModel.Product_Sales_for_1997.CategoryName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CategoryName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Product_Sales_for_1997.ProductName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ProductName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Product_Sales_for_1997.ProductSales">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ProductSales.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Products_Above_Average_Price">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Products_Above_Average_Price.
+            </summary>
+            <KeyProperties>
+            ProductName
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Products_Above_Average_Price.CreateProducts_Above_Average_Price(System.String)">
+            <summary>
+            Создайте новый объект Products_Above_Average_Price.
+            </summary>
+            <param name="productName">Начальное значение ProductName.</param>
+        </member>
+        <member name="P:NorthwindModel.Products_Above_Average_Price.ProductName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ProductName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Products_Above_Average_Price.UnitPrice">
+            <summary>
+            В схеме отсутствуют комментарии для свойства UnitPrice.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Products_by_Category">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Products_by_Category.
+            </summary>
+            <KeyProperties>
+            CategoryName
+            Discontinued
+            ProductName
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Products_by_Category.CreateProducts_by_Category(System.String,System.String,System.Boolean)">
+            <summary>
+            Создайте новый объект Products_by_Category.
+            </summary>
+            <param name="categoryName">Начальное значение CategoryName.</param>
+            <param name="productName">Начальное значение ProductName.</param>
+            <param name="discontinued">Начальное значение Discontinued.</param>
+        </member>
+        <member name="P:NorthwindModel.Products_by_Category.CategoryName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CategoryName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Products_by_Category.ProductName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ProductName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Products_by_Category.QuantityPerUnit">
+            <summary>
+            В схеме отсутствуют комментарии для свойства QuantityPerUnit.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Products_by_Category.UnitsInStock">
+            <summary>
+            В схеме отсутствуют комментарии для свойства UnitsInStock.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Products_by_Category.Discontinued">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Discontinued.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Sales_by_Category">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Sales_by_Category.
+            </summary>
+            <KeyProperties>
+            CategoryID
+            CategoryName
+            ProductName
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Sales_by_Category.CreateSales_by_Category(System.Int32,System.String,System.String)">
+            <summary>
+            Создайте новый объект Sales_by_Category.
+            </summary>
+            <param name="categoryID">Начальное значение CategoryID.</param>
+            <param name="categoryName">Начальное значение CategoryName.</param>
+            <param name="productName">Начальное значение ProductName.</param>
+        </member>
+        <member name="P:NorthwindModel.Sales_by_Category.CategoryID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CategoryID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Sales_by_Category.CategoryName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CategoryName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Sales_by_Category.ProductName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ProductName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Sales_by_Category.ProductSales">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ProductSales.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Sales_Totals_by_Amount">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Sales_Totals_by_Amount.
+            </summary>
+            <KeyProperties>
+            CompanyName
+            OrderID
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Sales_Totals_by_Amount.CreateSales_Totals_by_Amount(System.Int32,System.String)">
+            <summary>
+            Создайте новый объект Sales_Totals_by_Amount.
+            </summary>
+            <param name="orderID">Начальное значение OrderID.</param>
+            <param name="companyName">Начальное значение CompanyName.</param>
+        </member>
+        <member name="P:NorthwindModel.Sales_Totals_by_Amount.SaleAmount">
+            <summary>
+            В схеме отсутствуют комментарии для свойства SaleAmount.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Sales_Totals_by_Amount.OrderID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства OrderID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Sales_Totals_by_Amount.CompanyName">
+            <summary>
+            В схеме отсутствуют комментарии для свойства CompanyName.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Sales_Totals_by_Amount.ShippedDate">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShippedDate.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Summary_of_Sales_by_Quarter">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Summary_of_Sales_by_Quarter.
+            </summary>
+            <KeyProperties>
+            OrderID
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Summary_of_Sales_by_Quarter.CreateSummary_of_Sales_by_Quarter(System.Int32)">
+            <summary>
+            Создайте новый объект Summary_of_Sales_by_Quarter.
+            </summary>
+            <param name="orderID">Начальное значение OrderID.</param>
+        </member>
+        <member name="P:NorthwindModel.Summary_of_Sales_by_Quarter.ShippedDate">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShippedDate.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Summary_of_Sales_by_Quarter.OrderID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства OrderID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Summary_of_Sales_by_Quarter.Subtotal">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Subtotal.
+            </summary>
+        </member>
+        <member name="T:NorthwindModel.Summary_of_Sales_by_Year">
+            <summary>
+            В схеме отсутствуют комментарии для NorthwindModel.Summary_of_Sales_by_Year.
+            </summary>
+            <KeyProperties>
+            OrderID
+            </KeyProperties>
+        </member>
+        <member name="M:NorthwindModel.Summary_of_Sales_by_Year.CreateSummary_of_Sales_by_Year(System.Int32)">
+            <summary>
+            Создайте новый объект Summary_of_Sales_by_Year.
+            </summary>
+            <param name="orderID">Начальное значение OrderID.</param>
+        </member>
+        <member name="P:NorthwindModel.Summary_of_Sales_by_Year.ShippedDate">
+            <summary>
+            В схеме отсутствуют комментарии для свойства ShippedDate.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Summary_of_Sales_by_Year.OrderID">
+            <summary>
+            В схеме отсутствуют комментарии для свойства OrderID.
+            </summary>
+        </member>
+        <member name="P:NorthwindModel.Summary_of_Sales_by_Year.Subtotal">
+            <summary>
+            В схеме отсутствуют комментарии для свойства Subtotal.
+            </summary>
+        </member>
+        <member name="T:Northwind.ReportingServices.OData.ProductReports.ProductReportService">
+            <summary>
+            Represents a service that produces product-related reports.
+            </summary>
+        </member>
+        <member name="M:Northwind.ReportingServices.OData.ProductReports.ProductReportService.#ctor(System.Uri)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Northwind.ReportingServices.OData.ProductReports.ProductReportService"/> class.
+            </summary>
+            <param name="northwindServiceUri">An URL to Northwind OData service.</param>
+        </member>
+        <member name="M:Northwind.ReportingServices.OData.ProductReports.ProductReportService.GetCurrentProductsReport">
+            <summary>
+            Gets a product report with all current products.
+            </summary>
+            <returns>Returns <see cref="T:Northwind.ReportingServices.ProductReports.ProductReport`1"/>.</returns>
+        </member>
+        <member name="M:Northwind.ReportingServices.OData.ProductReports.ProductReportService.GetMostExpensiveProductsReport(System.Int32)">
+            <summary>
+            Gets a product report with most expensive products.
+            </summary>
+            <param name="count">Items count.</param>
+            <returns>Returns <see cref="T:Northwind.ReportingServices.ProductReports.ProductReport`1"/>.</returns>
+        </member>
+        <member name="M:Northwind.ReportingServices.OData.ProductReports.ProductReportService.GetPriceLessThenProductsReport(System.Int32)">
+            <summary>
+            Gets a product report with products, which price is less then products count.
+            </summary>
+            <param name="count">Items count.</param>
+            <returns>Returns <see cref="T:Northwind.ReportingServices.ProductReports.ProductReport`1"/>.</returns>
+        </member>
+        <member name="M:Northwind.ReportingServices.OData.ProductReports.ProductReportService.GetPriceBetweenProductsReport(System.Int32,System.Int32)">
+            <summary>
+            Gets a product report with products, which price is between left and right operands.
+            </summary>
+            <param name="leftSide">Left side operand.</param>
+            <param name="rightSide">Right side operand.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="M:Northwind.ReportingServices.OData.ProductReports.ProductReportService.GetPriceAboveAverageProductsReport">
+            <summary>
+            Gets a product report with products, which price is above average.
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="M:Northwind.ReportingServices.OData.ProductReports.ProductReportService.GetUnitsInStockDeficit">
+            <summary>
+            Gets a product report with products, which amount unit in stock is less then units on order.
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="M:Northwind.ReportingServices.OData.ProductReports.ProductReportService.GetPriceMoreThenProductsReport(System.Int32)">
+            <summary>
+            Gets a product report with products, which price is more then products count.
+            </summary>
+            <param name="count">Items count.</param>
+            <returns>Returns <see cref="T:Northwind.ReportingServices.ProductReports.ProductReport`1"/>.</returns>
+        </member>
+        <member name="M:Northwind.ReportingServices.OData.ProductReports.ProductReportService.GetUnitsInStockProficit">
+            <summary>
+            Gets a product report with products, which amount unit in stock is more then units on order.
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="M:Northwind.ReportingServices.OData.ProductReports.ProductReportService.GetCurrentProductsWithLocalCurrencyReport(Northwind.CurrencyServices.CountryCurrency.ICountryCurrencyService,Northwind.CurrencyServices.CurrencyExchange.ICurrencyExchangeService)">
+            <summary>
+            Gets a product report with products.
+            </summary>
+            <param name="countryCurrencyService">Country currency service.</param>
+            <param name="currencyExchangeService">Currency exchange service.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+    </members>
+</doc>

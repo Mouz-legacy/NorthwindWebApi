@@ -1,0 +1,16 @@
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices\obj\Debug\net5.0\Northwind.ReportingServices.csproj.AssemblyReference.cache
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices\obj\Debug\net5.0\Northwind.ReportingServices.GeneratedMSBuildEditorConfig.editorconfig
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices\obj\Debug\net5.0\Northwind.ReportingServices.AssemblyInfoInputs.cache
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices\obj\Debug\net5.0\Northwind.ReportingServices.AssemblyInfo.cs
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices\obj\Debug\net5.0\Northwind.ReportingServices.csproj.CoreCompileInputs.cache
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices\bin\Debug\net5.0\Northwind.ReportingServices.deps.json
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices\bin\Debug\net5.0\Northwind.ReportingServices.dll
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices\bin\Debug\net5.0\ref\Northwind.ReportingServices.dll
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices\bin\Debug\net5.0\Northwind.ReportingServices.pdb
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices\bin\Debug\net5.0\Northwind.CurrencyServices.dll
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices\bin\Debug\net5.0\Northwind.CurrencyServices.pdb
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices\bin\Debug\net5.0\Northwind.CurrencyServices.xml
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices\obj\Debug\net5.0\Northwind.ReportingServices.csproj.CopyComplete
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices\obj\Debug\net5.0\Northwind.ReportingServices.dll
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices\obj\Debug\net5.0\ref\Northwind.ReportingServices.dll
+D:\EpamTraining\ReportingApps\Northwind.ReportingServices\obj\Debug\net5.0\Northwind.ReportingServices.pdb

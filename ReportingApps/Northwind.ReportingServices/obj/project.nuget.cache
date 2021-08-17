@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "jETM4a9d11mZxaERKHUsggMZyre8VPwc6oVAb8jbixcKwK4c7+qpy2V99Lg1bS+5z3nQTqX5fqJCrrALTRnHvQ==",
+  "success": true,
+  "projectFilePath": "D:\\EpamTraining\\ReportingApps\\Northwind.ReportingServices\\Northwind.ReportingServices.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\strel\\.nuget\\packages\\microsoft.codeanalysis.fxcopanalyzers\\3.3.2\\microsoft.codeanalysis.fxcopanalyzers.3.3.2.nupkg.sha512",
+    "C:\\Users\\strel\\.nuget\\packages\\microsoft.codeanalysis.versioncheckanalyzer\\3.3.2\\microsoft.codeanalysis.versioncheckanalyzer.3.3.2.nupkg.sha512",
+    "C:\\Users\\strel\\.nuget\\packages\\microsoft.codequality.analyzers\\3.3.2\\microsoft.codequality.analyzers.3.3.2.nupkg.sha512",
+    "C:\\Users\\strel\\.nuget\\packages\\microsoft.netcore.analyzers\\3.3.2\\microsoft.netcore.analyzers.3.3.2.nupkg.sha512",
+    "C:\\Users\\strel\\.nuget\\packages\\microsoft.netframework.analyzers\\3.3.2\\microsoft.netframework.analyzers.3.3.2.nupkg.sha512",
+    "C:\\Users\\strel\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\strel\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
+    "C:\\Users\\strel\\.nuget\\packages\\system.text.json\\5.0.2\\system.text.json.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReportingApp</name>
+    </assembly>
+    <members>
+        <member name="T:ReportingApp.CurrentProductLocalPriceReport">
+            <summary>
+            CurrentProductLocalPriceReport class.
+            </summary>
+        </member>
+        <member name="M:ReportingApp.CurrentProductLocalPriceReport.#ctor(Northwind.ReportingSerivces.ProductReports.IProductReportService,Northwind.CurrencyServices.CurrencyExchange.ICurrencyExchangeService,Northwind.CurrencyServices.CountryCurrency.ICountryCurrencyService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ReportingApp.CurrentProductLocalPriceReport"/> class.
+            </summary>
+            <param name="productReportService">Report service.</param>
+            <param name="currencyExchangeService">Exchange service.</param>
+            <param name="countryCurrencyService">Currency service.</param>
+        </member>
+        <member name="M:ReportingApp.CurrentProductLocalPriceReport.PrintReport">
+            <summary>
+            PrintReport method.
+            </summary>
+            <returns>Task with report.</returns>
+        </member>
+        <member name="T:ReportingApp.Program">
+            <summary>
+            Program class.
+            </summary>
+        </member>
+        <member name="M:ReportingApp.Program.Main(System.String[])">
+            <summary>
+            A program entry point.
+            </summary>
+            <param name="args">Program arguments.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+    </members>
+</doc>
