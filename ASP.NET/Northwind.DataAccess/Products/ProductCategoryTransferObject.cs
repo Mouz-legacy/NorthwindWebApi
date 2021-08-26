@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
-using Nortwind.Services.Products;
+using Northwind.Services.Products;
 
 namespace Northwind.DataAccess.Products
 {
@@ -32,7 +32,7 @@ namespace Northwind.DataAccess.Products
         public byte[] Picture { get; set; }
 #pragma warning restore CA1819 // Properties should not return arrays
 
-        public static explicit operator ProductCategoryTransferObject(ProductCategory productCategory)
+        public static explicit operator ProductCategoryTransferObject(Category productCategory)
         {
             if (productCategory is null)
             {
@@ -41,8 +41,8 @@ namespace Northwind.DataAccess.Products
 
             ProductCategoryTransferObject productCategoryTransferObject = new ()
             {
-                Id = productCategory.Id,
-                Name = productCategory.Name,
+                Id = productCategory.CategoryId,
+                Name = productCategory.CategoryName,
                 Description = productCategory.Description,
                 Picture = productCategory.Picture,
             };
@@ -50,17 +50,17 @@ namespace Northwind.DataAccess.Products
             return productCategoryTransferObject;
         }
 
-        public static explicit operator ProductCategory(ProductCategoryTransferObject productCategoryTransferObject)
+        public static explicit operator Category(ProductCategoryTransferObject productCategoryTransferObject)
         {
             if (productCategoryTransferObject is null)
             {
                 throw new ArgumentNullException(nameof(productCategoryTransferObject));
             }
 
-            ProductCategory productCategory = new ()
+            Category productCategory = new ()
             {
-                Id = productCategoryTransferObject.Id,
-                Name = productCategoryTransferObject.Name,
+                CategoryId = productCategoryTransferObject.Id,
+                CategoryName = productCategoryTransferObject.Name,
                 Description = productCategoryTransferObject.Description,
                 Picture = productCategoryTransferObject.Picture,
             };

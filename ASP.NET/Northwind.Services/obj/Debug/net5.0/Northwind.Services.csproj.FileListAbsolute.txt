@@ -1,0 +1,12 @@
+D:\EpamTraining\Northwind\CompleteNorthwind\Northwind.Services\bin\Debug\net5.0\Northwind.Services.deps.json
+D:\EpamTraining\Northwind\CompleteNorthwind\Northwind.Services\bin\Debug\net5.0\Northwind.Services.dll
+D:\EpamTraining\Northwind\CompleteNorthwind\Northwind.Services\bin\Debug\net5.0\ref\Northwind.Services.dll
+D:\EpamTraining\Northwind\CompleteNorthwind\Northwind.Services\bin\Debug\net5.0\Northwind.Services.pdb
+D:\EpamTraining\Northwind\CompleteNorthwind\Northwind.Services\obj\Debug\net5.0\Northwind.Services.csproj.AssemblyReference.cache
+D:\EpamTraining\Northwind\CompleteNorthwind\Northwind.Services\obj\Debug\net5.0\Northwind.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\EpamTraining\Northwind\CompleteNorthwind\Northwind.Services\obj\Debug\net5.0\Northwind.Services.AssemblyInfoInputs.cache
+D:\EpamTraining\Northwind\CompleteNorthwind\Northwind.Services\obj\Debug\net5.0\Northwind.Services.AssemblyInfo.cs
+D:\EpamTraining\Northwind\CompleteNorthwind\Northwind.Services\obj\Debug\net5.0\Northwind.Services.csproj.CoreCompileInputs.cache
+D:\EpamTraining\Northwind\CompleteNorthwind\Northwind.Services\obj\Debug\net5.0\Northwind.Services.dll
+D:\EpamTraining\Northwind\CompleteNorthwind\Northwind.Services\obj\Debug\net5.0\ref\Northwind.Services.dll
+D:\EpamTraining\Northwind\CompleteNorthwind\Northwind.Services\obj\Debug\net5.0\Northwind.Services.pdb

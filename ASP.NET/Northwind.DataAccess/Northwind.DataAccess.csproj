@@ -5,11 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Nortwind.Services\Northwind.Services.csproj" />
+    <ProjectReference Include="..\Northwind.Services\Northwind.Services.csproj" />
   </ItemGroup>
 
 </Project>

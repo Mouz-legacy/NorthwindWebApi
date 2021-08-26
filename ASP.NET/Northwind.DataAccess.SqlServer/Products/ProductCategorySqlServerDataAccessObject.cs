@@ -1,12 +1,16 @@
-﻿// ReSharper disable CheckNamespace
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
-using System.Globalization;
+﻿// <copyright file="ProductCategorySqlServerDataAccessObject.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
 namespace Northwind.DataAccess.Products
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Data;
+    using System.Data.SqlClient;
+    using System.Globalization;
+    using System.Threading.Tasks;
+
     /// <summary>
     /// Represents a SQL Server-tailored DAO for Northwind product categories.
     /// </summary>
@@ -24,7 +28,7 @@ namespace Northwind.DataAccess.Products
         }
 
         /// <inheritdoc/>
-        public int InsertProductCategory(ProductCategoryTransferObject productCategory)
+        public async Task<int> InsertProductCategoryAsync(ProductCategoryTransferObject productCategory)
         {
             if (productCategory == null)
             {
@@ -35,17 +39,15 @@ namespace Northwind.DataAccess.Products
 @"INSERT INTO dbo.Categories (CategoryName, Description, Picture) OUTPUT Inserted.CategoryID
 VALUES (@categoryName, @description, @picture)";
 
-            using (var command = new SqlCommand(commandText, this.connection))
-            {
-                AddSqlParameters(productCategory, command);
+            await using var command = new SqlCommand(commandText, this.connection);
+            AddSqlParameters(productCategory, command);
 
-                var id = command.ExecuteScalar();
-                return (int)id;
-            }
+            var id = await command.ExecuteScalarAsync().ConfigureAwait(true);
+            return (int)id;
         }
 
         /// <inheritdoc/>
-        public bool DeleteProductCategory(int productCategoryId)
+        public async Task<bool> DeleteProductCategoryAsync(int productCategoryId)
         {
             if (productCategoryId <= 0)
             {
@@ -56,15 +58,13 @@ VALUES (@categoryName, @description, @picture)";
 @"DELETE FROM dbo.Categories WHERE CategoryID = @categoryID
 SELECT @@ROWCOUNT";
 
-            using (var command = new SqlCommand(commandText, this.connection))
-            {
-                const string categoryId = "@categoryID";
-                command.Parameters.Add(categoryId, SqlDbType.Int);
-                command.Parameters[categoryId].Value = productCategoryId;
+            await using var command = new SqlCommand(commandText, this.connection);
+            const string categoryId = "@categoryID";
+            command.Parameters.Add(categoryId, SqlDbType.Int);
+            command.Parameters[categoryId].Value = productCategoryId;
 
-                var result = command.ExecuteScalar();
-                return ((int)result) > 0;
-            }
+            var result = await command.ExecuteScalarAsync().ConfigureAwait(true);
+            return ((int)result) > 0;
         }
 
         /// <inheritdoc/>
@@ -79,26 +79,22 @@ SELECT @@ROWCOUNT";
 @"SELECT c.CategoryID, c.CategoryName, c.Description, c.Picture FROM dbo.Categories as c
 WHERE c.CategoryID = @categoryId";
 
-            using (var command = new SqlCommand(commandText, this.connection))
+            using var command = new SqlCommand(commandText, this.connection);
+            const string categoryId = "@categoryId";
+            command.Parameters.Add(categoryId, SqlDbType.Int);
+            command.Parameters[categoryId].Value = productCategoryId;
+
+            using var reader = command.ExecuteReader();
+            if (!reader.Read())
             {
-                const string categoryId = "@categoryId";
-                command.Parameters.Add(categoryId, SqlDbType.Int);
-                command.Parameters[categoryId].Value = productCategoryId;
-
-                using (var reader = command.ExecuteReader())
-                {
-                    if (!reader.Read())
-                    {
-                        throw new ProductCategoryNotFoundException(productCategoryId);
-                    }
-
-                    return CreateProductCategory(reader);
-                }
+                throw new ProductCategoryNotFoundException(productCategoryId);
             }
+
+            return CreateProductCategory(reader);
         }
 
         /// <inheritdoc/>
-        public IList<ProductCategoryTransferObject> SelectProductCategories(int offset, int limit)
+        public async Task<IList<ProductCategoryTransferObject>> SelectProductCategoriesAsync(int offset, int limit)
         {
             if (offset < 0)
             {
@@ -117,11 +113,11 @@ OFFSET {0} ROWS
 FETCH FIRST {1} ROWS ONLY";
 
             string commandText = string.Format(CultureInfo.CurrentCulture, commandTemplate, offset, limit);
-            return this.ExecuteReader(commandText);
+            return await this.ExecuteReaderAsync(commandText).ConfigureAwait(true);
         }
 
         /// <inheritdoc/>
-        public IList<ProductCategoryTransferObject> SelectProductCategoriesByName(ICollection<string> productCategoryNames)
+        public async Task<IList<ProductCategoryTransferObject>> SelectProductCategoriesByNameAsync(ICollection<string> productCategoryNames)
         {
             if (productCategoryNames == null)
             {
@@ -139,11 +135,11 @@ WHERE c.CategoryName in ('{0}')
 ORDER BY c.CategoryID";
 
             string commandText = string.Format(CultureInfo.CurrentCulture, commandTemplate, string.Join("', '", productCategoryNames));
-            return this.ExecuteReader(commandText);
+            return await this.ExecuteReaderAsync(commandText).ConfigureAwait(true);
         }
 
         /// <inheritdoc/>
-        public bool UpdateProductCategory(ProductCategoryTransferObject productCategory)
+        public async Task<bool> UpdateProductCategoryAsync(ProductCategoryTransferObject productCategory)
         {
             if (productCategory == null)
             {
@@ -155,17 +151,15 @@ ORDER BY c.CategoryID";
 WHERE CategoryID = @categoryId
 SELECT @@ROWCOUNT";
 
-            using (var command = new SqlCommand(commandText, this.connection))
-            {
-                AddSqlParameters(productCategory, command);
+            await using var command = new SqlCommand(commandText, this.connection);
+            AddSqlParameters(productCategory, command);
 
-                const string categoryId = "@categoryId";
-                command.Parameters.Add(categoryId, SqlDbType.Int);
-                command.Parameters[categoryId].Value = productCategory.Id;
+            const string categoryId = "@categoryId";
+            command.Parameters.Add(categoryId, SqlDbType.Int);
+            command.Parameters[categoryId].Value = productCategory.Id;
 
-                var result = command.ExecuteScalar();
-                return ((int)result) > 0;
-            }
+            var result = await command.ExecuteScalarAsync().ConfigureAwait(true);
+            return ((int)result) > 0;
         }
 
         private static ProductCategoryTransferObject CreateProductCategory(SqlDataReader reader)
@@ -231,19 +225,16 @@ SELECT @@ROWCOUNT";
             }
         }
 
-        private IList<ProductCategoryTransferObject> ExecuteReader(string commandText)
+        private async Task<IList<ProductCategoryTransferObject>> ExecuteReaderAsync(string commandText)
         {
             var productCategories = new List<ProductCategoryTransferObject>();
 
 #pragma warning disable CA2100 // Review SQL queries for security vulnerabilities
-            using (var command = new SqlCommand(commandText, this.connection))
-#pragma warning restore CA2100 // Review SQL queries for security vulnerabilities
-            using (var reader = command.ExecuteReader())
+            await using var command = new SqlCommand(commandText, this.connection);
+            await using var reader = await command.ExecuteReaderAsync().ConfigureAwait(true);
+            while (reader.Read())
             {
-                while (reader.Read())
-                {
-                    productCategories.Add(CreateProductCategory(reader));
-                }
+                productCategories.Add(CreateProductCategory(reader));
             }
 
             return productCategories;

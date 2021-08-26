@@ -1,19 +1,23 @@
-﻿// ReSharper disable CheckNamespace
-
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
-using System.Globalization;
+﻿// <copyright file="EmployeeSqlServerDataAccessObject.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+// ReSharper disable CheckNamespace
 
 namespace Northwind.DataAccess.Employees
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Data;
+    using System.Data.SqlClient;
+    using System.Globalization;
+    using System.Threading.Tasks;
+
     /// <summary>
     /// Represents a SQL Server-tailored DAO for Northwind products.
     /// </summary>
     public sealed class EmployeeSqlServerDataAccessObject : IEmployeeDataAccessObject
     {
-        private SqlConnection connection;
+        private readonly SqlConnection connection;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="EmployeeSqlServerDataAccessObject"/> class.
@@ -25,7 +29,7 @@ namespace Northwind.DataAccess.Employees
         }
 
         /// <inheritdoc/>
-        public bool DeleteEmployee(int employeeId)
+        public async Task<bool> DeleteEmployeeAsync(int employeeId)
         {
             if (employeeId <= 0)
             {
@@ -34,15 +38,12 @@ namespace Northwind.DataAccess.Employees
 
             const string commandText = @"DELETE FROM dbo.Employees WHERE EmployeeID = @employeeID SELECT @@ROWCOUNT";
 
-            using (var command = new SqlCommand(commandText, this.connection))
-            {
-                const string employeeBaseId = "@employeeID";
-                command.Parameters.Add(employeeBaseId, SqlDbType.Int);
-                command.Parameters[employeeBaseId].Value = employeeId;
-
-                var result = command.ExecuteScalar();
-                return ((int)result) > 0;
-            }
+            await using var command = new SqlCommand(commandText, this.connection);
+            const string employeeBaseId = "@employeeID";
+            command.Parameters.Add(employeeBaseId, SqlDbType.Int);
+            command.Parameters[employeeBaseId].Value = employeeId;
+            var result = await command.ExecuteScalarAsync().ConfigureAwait(true);
+            return ((int)result) > 0;
         }
 
         /// <inheritdoc/>
@@ -57,26 +58,22 @@ namespace Northwind.DataAccess.Employees
                 @"SELECT e.EmployeeId, e.LastName, e.FirstName, e.Title, e.TitleOfCourtesy, e.BirthDate, e.HireDate, e.Address, e.City, e.Region, e.PostalCode, e.Country, e.HomePhone, e.Extension, e.Photo, e.Notes, e.ReportsTo, e.PhotoPath FROM dbo.Employees as e
                   WHERE e.EmployeeID = @employeeId";
 
-            using (var command = new SqlCommand(commandText, this.connection))
+            using var command = new SqlCommand(commandText, this.connection);
+            const string employeeBaseId = "@employeeId";
+            command.Parameters.Add(employeeBaseId, SqlDbType.Int);
+            command.Parameters[employeeBaseId].Value = employeeId;
+
+            using var reader = command.ExecuteReader();
+            if (!reader.Read())
             {
-                const string employeeBaseId = "@employeeId";
-                command.Parameters.Add(employeeBaseId, SqlDbType.Int);
-                command.Parameters[employeeBaseId].Value = employeeId;
-
-                using (var reader = command.ExecuteReader())
-                {
-                    if (!reader.Read())
-                    {
-                        throw new ArgumentException($"Employee with id {employeeId} not found.", nameof(employeeId));
-                    }
-
-                    return CreateEmployee(reader);
-                }
+                throw new ArgumentException($"Employee with id {employeeId} not found.", nameof(employeeId));
             }
+
+            return CreateEmployee(reader);
         }
 
         /// <inheritdoc/>
-        public int InsertEmployee(EmployeeTransferObject employee)
+        public async Task<int> InsertEmployeeAsync(EmployeeTransferObject employee)
         {
             if (employee is null)
             {
@@ -87,17 +84,14 @@ namespace Northwind.DataAccess.Employees
                 @"INSERT INTO dbo.Employees (LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Photo, Notes, ReportsTo, PhotoPath) OUTPUT Inserted.EmployeeID
                 VALUES (@lastName, @firstName, @title, @titleOfCourtesy, @birthDate, @hireDate, @address, @city, @region, @postalCode, @country, @homePhone, @extension, @photo, @notes, @reportsTo, @photoPath)";
 
-            using (var command = new SqlCommand(commandText, this.connection))
-            {
-                AddSqlParameters(employee, command);
-
-                var id = command.ExecuteScalar();
-                return (int)id;
-            }
+            await using var command = new SqlCommand(commandText, this.connection);
+            AddSqlParameters(employee, command);
+            var id = await command.ExecuteScalarAsync().ConfigureAwait(true);
+            return (int)id;
         }
 
         /// <inheritdoc/>
-        public IList<EmployeeTransferObject> SelectEmployees(int offset, int limit)
+        public async Task<IList<EmployeeTransferObject>> SelectEmployeesAsync(int offset, int limit)
         {
             if (offset < 0)
             {
@@ -116,11 +110,11 @@ namespace Northwind.DataAccess.Employees
                   FETCH FIRST {1} ROWS ONLY";
 
             string commandText = string.Format(CultureInfo.CurrentCulture, commandTemplate, offset, limit);
-            return this.ExecuteReader(commandText);
+            return await this.ExecuteReaderAsync(commandText).ConfigureAwait(true);
         }
 
         /// <inheritdoc/>
-        public bool UpdateEmployee(EmployeeTransferObject employee)
+        public async Task<bool> UpdateEmployeeAsync(EmployeeTransferObject employee)
         {
             if (employee is null)
             {
@@ -132,18 +126,13 @@ namespace Northwind.DataAccess.Employees
                   WHERE EmployeeID = @employeeId
                   SELECT @@ROWCOUNT";
 
-            using (var command = new SqlCommand(commandText, this.connection))
-            {
-                AddSqlParameters(employee, command);
-
-                const string employeeId = "@employeeId";
-                command.Parameters.Add(employeeId, SqlDbType.Int);
-                command.Parameters[employeeId].Value = employee.Id;
-
-                this.OpenSqlConnectionIfItClose();
-                var result = command.ExecuteScalar();
-                return ((int)result) > 0;
-            }
+            await using var command = new SqlCommand(commandText, this.connection);
+            AddSqlParameters(employee, command);
+            const string employeeId = "@employeeId";
+            command.Parameters.Add(employeeId, SqlDbType.Int);
+            command.Parameters[employeeId].Value = employee.Id;
+            var result = await command.ExecuteScalarAsync().ConfigureAwait(true);
+            return ((int)result) > 0;
         }
 
         private static EmployeeTransferObject CreateEmployee(SqlDataReader reader)
@@ -238,17 +227,17 @@ namespace Northwind.DataAccess.Employees
                 command.Parameters[employeeTitleParameter].Value = DBNull.Value;
             }
 
-            const string employeeTitleOfCountesyParameter = "@titleOfCountesy";
-            command.Parameters.Add(employeeTitleOfCountesyParameter, SqlDbType.NVarChar, 25);
-            command.Parameters[employeeTitleOfCountesyParameter].IsNullable = true;
+            const string employeeTitleOfCourtesyParameter = "@titleOfCourtesy";
+            command.Parameters.Add(employeeTitleOfCourtesyParameter, SqlDbType.NVarChar, 25);
+            command.Parameters[employeeTitleOfCourtesyParameter].IsNullable = true;
 
             if (employee.TitleOfCourtesy != null)
             {
-                command.Parameters[employeeTitleOfCountesyParameter].Value = employee.TitleOfCourtesy;
+                command.Parameters[employeeTitleOfCourtesyParameter].Value = employee.TitleOfCourtesy;
             }
             else
             {
-                command.Parameters[employeeTitleOfCountesyParameter].Value = DBNull.Value;
+                command.Parameters[employeeTitleOfCourtesyParameter].Value = DBNull.Value;
             }
 
             const string employeeBirthDateParameter = "@birthDate";
@@ -313,30 +302,19 @@ namespace Northwind.DataAccess.Employees
             command.Parameters[employeePhotoPathParameter].Value = employee.PhotoPath;
         }
 
-        private IList<EmployeeTransferObject> ExecuteReader(string commandText)
+        private async Task<IList<EmployeeTransferObject>> ExecuteReaderAsync(string commandText)
         {
             var productCategories = new List<EmployeeTransferObject>();
 
 #pragma warning disable CA2100 // Review SQL queries for security vulnerabilities
-            using (var command = new SqlCommand(commandText, this.connection))
-#pragma warning restore CA2100 // Review SQL queries for security vulnerabilities
-            using (var reader = command.ExecuteReader())
+            await using var command = new SqlCommand(commandText, this.connection);
+            await using var reader = await command.ExecuteReaderAsync().ConfigureAwait(true);
+            while (reader.Read())
             {
-                while (reader.Read())
-                {
-                    productCategories.Add(CreateEmployee(reader));
-                }
+                productCategories.Add(CreateEmployee(reader));
             }
 
             return productCategories;
-        }
-
-        private void OpenSqlConnectionIfItClose()
-        {
-            if (this.connection is not null && this.connection.State != ConnectionState.Open)
-            {
-                this.connection.Open();
-            }
         }
     }
 }

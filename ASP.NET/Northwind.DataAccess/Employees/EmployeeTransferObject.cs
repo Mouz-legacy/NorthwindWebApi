@@ -1,5 +1,5 @@
-﻿using System;
-using Nortwind.Services.Employees;
+﻿using Northwind.Services.Employees;
+using System;
 
 namespace Northwind.DataAccess.Employees
 {
@@ -53,7 +53,7 @@ namespace Northwind.DataAccess.Employees
 
             EmployeeTransferObject employeeTransferObject = new ()
             {
-                Id = employee.Id,
+                Id = employee.EmployeeId,
                 LastName = employee.LastName,
                 FirstName = employee.FirstName,
                 Title = employee.Title,
@@ -85,13 +85,13 @@ namespace Northwind.DataAccess.Employees
 
             Employee employee = new ()
             {
-                Id = employeeTransferObject.Id,
+                EmployeeId = employeeTransferObject.Id,
                 LastName = employeeTransferObject.LastName,
                 FirstName = employeeTransferObject.FirstName,
                 Title = employeeTransferObject.Title,
                 TitleOfCourtesy = employeeTransferObject.TitleOfCourtesy,
-                BirthDate = employeeTransferObject.BirthDate,
-                HireDate = employeeTransferObject.HireDate,
+                BirthDate = (DateTime)employeeTransferObject.BirthDate,
+                HireDate = (DateTime)employeeTransferObject.HireDate,
                 Address = employeeTransferObject.Address,
                 City = employeeTransferObject.City,
                 Region = employeeTransferObject.Region,

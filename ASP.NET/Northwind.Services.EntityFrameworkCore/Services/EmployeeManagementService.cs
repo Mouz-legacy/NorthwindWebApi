@@ -1,11 +1,19 @@
-﻿using Nortwind.Services.Employees;
-using Nortwind.Services.EntityFrameworkCore.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿// <copyright file="EmployeeManagementService.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
 namespace Northwind.Services.EntityFrameworkCore.Services
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Northwind.Services.Employees;
+    using Northwind.Services.EntityFrameworkCore.Context;
+
+    /// <summary>
+    /// EmployeeManagementService class.
+    /// </summary>
     public class EmployeeManagementService : IEmployeeManagementService
     {
         private readonly NorthwindContext context;
@@ -20,7 +28,7 @@ namespace Northwind.Services.EntityFrameworkCore.Services
         }
 
         /// <inheritdoc/>
-        public int CreateEmployee(Employee employee)
+        public async Task<int> CreateEmployeeAsync(Employee employee)
         {
             if (employee is null)
             {
@@ -29,26 +37,26 @@ namespace Northwind.Services.EntityFrameworkCore.Services
 
             if (this.context.Employees.Any())
             {
-                employee.Id = this.context.Employees.Max(e => e.Id) + 1;
+                employee.EmployeeId = this.context.Employees.Max(e => e.EmployeeId) + 1;
             }
             else
             {
-                employee.Id = 0;
+                employee.EmployeeId = 0;
             }
 
             this.context.Employees.Add(employee);
-            this.context.SaveChanges();
-            return employee.Id;
+            await this.context.SaveChangesAsync().ConfigureAwait(true);
+            return employee.EmployeeId;
         }
 
         /// <inheritdoc/>
-        public bool DestroyEmployee(int employeeId)
+        public async Task<bool> DestroyEmployeeAsync(int employeeId)
         {
-            var employee = this.context.Employees.Find(employeeId);
+            var employee = await this.context.Employees.FindAsync(employeeId).ConfigureAwait(true);
             if (employee is not null)
             {
                 this.context.Employees.Remove(employee);
-                this.context.SaveChanges();
+                await this.context.SaveChangesAsync().ConfigureAwait(true);
                 return true;
             }
             else
@@ -58,9 +66,9 @@ namespace Northwind.Services.EntityFrameworkCore.Services
         }
 
         /// <inheritdoc/>
-        public IList<Employee> ShowEmployees(int offset, int limit)
+        public async Task<IList<Employee>> ShowEmployeesAsync(int offset, int limit)
         {
-            return this.context.Employees.Where(e => e.Id >= offset).Take(limit).ToList();
+            return this.context.Employees.Where(e => e.EmployeeId >= offset).Take(limit).ToList();
         }
 
         /// <inheritdoc/>
@@ -71,14 +79,14 @@ namespace Northwind.Services.EntityFrameworkCore.Services
         }
 
         /// <inheritdoc/>
-        public bool UpdateEmployee(int employeeId, Employee employee)
+        public async Task<bool> UpdateEmployeeAsync(int employeeId, Employee employee)
         {
             if (employee is null)
             {
                 throw new ArgumentNullException(nameof(employee));
             }
 
-            var newEmployee = this.context.Employees.Single(e => e.Id == employeeId);
+            var newEmployee = this.context.Employees.Single(e => e.EmployeeId == employeeId);
             if (newEmployee is not null)
             {
                 newEmployee.LastName = employee.LastName;
@@ -98,6 +106,7 @@ namespace Northwind.Services.EntityFrameworkCore.Services
                 newEmployee.Notes = employee.Notes;
                 newEmployee.ReportsTo = employee.ReportsTo;
                 newEmployee.PhotoPath = employee.PhotoPath;
+                await this.context.SaveChangesAsync().ConfigureAwait(true);
                 return true;
             }
             else

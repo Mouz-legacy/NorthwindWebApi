@@ -68,8 +68,8 @@ namespace Northwind.DataAccess.Products
 
             ProductTransferObject productTransferObject = new ()
             {
-                Id = product.Id,
-                Name = product.Name,
+                Id = product.ProductId,
+                Name = product.ProductName,
                 SupplierId = product.SupplierId,
                 CategoryId = product.CategoryId,
                 QuantityPerUnit = product.QuantityPerUnit,
@@ -92,8 +92,8 @@ namespace Northwind.DataAccess.Products
 
             Services.Products.Product product = new ()
             {
-                Id = productTransferObject.Id,
-                Name = productTransferObject.Name,
+                ProductId = productTransferObject.Id,
+                ProductName = productTransferObject.Name,
                 SupplierId = productTransferObject.SupplierId,
                 CategoryId = productTransferObject.CategoryId,
                 QuantityPerUnit = productTransferObject.QuantityPerUnit,

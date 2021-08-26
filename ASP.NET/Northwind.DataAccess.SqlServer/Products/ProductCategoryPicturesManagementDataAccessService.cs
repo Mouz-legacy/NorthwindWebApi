@@ -1,15 +1,23 @@
-﻿using Northwind.DataAccess;
-using Northwind.DataAccess.Products;
-using Nortwind.Services.Products;
-using System;
-using System.Data.SqlClient;
-using System.IO;
+﻿// <copyright file="ProductCategoryPicturesManagementDataAccessService.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
 namespace Northwind.Services.DataAccess
 {
+    using System;
+    using System.Data.SqlClient;
+    using System.IO;
+    using System.Threading.Tasks;
+    using Northwind.DataAccess;
+    using Northwind.DataAccess.Products;
+    using Northwind.Services.Products;
+
+    /// <summary>
+    /// ProductCategoryPicturesManagementDataAccessService class.
+    /// </summary>
     public class ProductCategoryPicturesManagementDataAccessService : IProductCategoryPicturesService
     {
-        private NorthwindDataAccessFactory northwindDataAccessFactory;
+        private readonly NorthwindDataAccessFactory northwindDataAccessFactory;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ProductCategoryPicturesManagementDataAccessService"/> class.
@@ -21,7 +29,7 @@ namespace Northwind.Services.DataAccess
         }
 
         /// <inheritdoc/>
-        public bool DestroyPicture(int categoryId)
+        public async Task<bool> DestroyPictureAsync(int categoryId)
         {
             if (categoryId < 1)
             {
@@ -39,7 +47,7 @@ namespace Northwind.Services.DataAccess
             }
 
             productCategoryTransferObject.Picture = null;
-            if (this.northwindDataAccessFactory.GetProductCategoryDataAccessObject().UpdateProductCategory(productCategoryTransferObject))
+            if (await this.northwindDataAccessFactory.GetProductCategoryDataAccessObject().UpdateProductCategoryAsync(productCategoryTransferObject).ConfigureAwait(true))
             {
                 return true;
             }
@@ -73,7 +81,7 @@ namespace Northwind.Services.DataAccess
         }
 
         /// <inheritdoc/>
-        public bool UpdatePicture(int categoryId, Stream stream)
+        public async Task<bool> UpdatePictureAsync(int categoryId, Stream stream)
         {
             if (stream is null)
             {
@@ -101,7 +109,7 @@ namespace Northwind.Services.DataAccess
             stream.CopyTo(memoryStream);
             productCategoryTransferObject.Picture = memoryStream.ToArray();
 
-            if (this.northwindDataAccessFactory.GetProductCategoryDataAccessObject().UpdateProductCategory(productCategoryTransferObject))
+            if (await this.northwindDataAccessFactory.GetProductCategoryDataAccessObject().UpdateProductCategoryAsync(productCategoryTransferObject).ConfigureAwait(true))
             {
                 return true;
             }

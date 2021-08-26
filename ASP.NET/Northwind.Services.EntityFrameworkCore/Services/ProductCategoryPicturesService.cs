@@ -1,8 +1,14 @@
-﻿namespace Nortwind.Services.EntityFrameworkCore.Services
+﻿// <copyright file="ProductCategoryPicturesService.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+
+namespace Nortwind.Services.EntityFrameworkCore.Services
 {
     using System;
     using System.IO;
-    using Nortwind.Services.Products;
+    using System.Threading.Tasks;
+    using Northwind.Services.EntityFrameworkCore.Context;
+    using Northwind.Services.Products;
 
     /// <summary>
     /// Represents a product category management service.
@@ -28,7 +34,7 @@
                 throw new ArgumentException("CategoryId can't be less than one.", nameof(categoryId));
             }
 
-            var category = this.context.ProductCategories.Find(categoryId);
+            var category = this.context.Categories.Find(categoryId);
             if (category is null)
             {
                 bytes = null;
@@ -40,37 +46,37 @@
         }
 
         /// <inheritdoc/>
-        public bool UpdatePicture(int categoryId, Stream stream)
+        public async Task<bool> UpdatePictureAsync(int categoryId, Stream stream)
         {
             if (stream is null)
             {
                 throw new ArgumentNullException(nameof(stream));
             }
 
-            var category = this.context.ProductCategories.Find(categoryId);
+            var category = await this.context.Categories.FindAsync(categoryId).ConfigureAwait(true);
             if (category is null)
             {
                 return false;
             }
 
-            using var memoryStream = new MemoryStream();
+            await using var memoryStream = new MemoryStream();
             stream.Seek(0, SeekOrigin.Begin);
-            stream.CopyTo(memoryStream);
+            await stream.CopyToAsync(memoryStream).ConfigureAwait(true);
             category.Picture = memoryStream.ToArray();
             this.context.Update(category);
-            this.context.SaveChanges();
+            await this.context.SaveChangesAsync().ConfigureAwait(true);
             return true;
         }
 
         /// <inheritdoc/>
-        public bool DestroyPicture(int categoryId)
+        public async Task<bool> DestroyPictureAsync(int categoryId)
         {
             if (categoryId < 1)
             {
                 throw new ArgumentException("CategoryId can't be less than one.", nameof(categoryId));
             }
 
-            var category = this.context.ProductCategories.Find(categoryId);
+            var category = await this.context.Categories.FindAsync(categoryId).ConfigureAwait(true);
             if (category is null)
             {
                 return false;
@@ -78,7 +84,7 @@
 
             category.Picture = null;
             this.context.Update(category);
-            this.context.SaveChanges();
+            await this.context.SaveChangesAsync().ConfigureAwait(true);
             return true;
         }
     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\strel\\source\\repos\\Northwind.Services.EntityFrameworkCore\\Northwind.Services.EntityFrameworkCore.csproj": {}
+    "D:\\EpamTraining\\Northwind\\CompleteNorthwind\\Northwind.Services.EntityFrameworkCore\\Northwind.Services.EntityFrameworkCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\strel\\source\\repos\\Northwind.Services.EntityFrameworkCore\\Northwind.Services.EntityFrameworkCore.csproj": {
+    "D:\\EpamTraining\\Northwind\\CompleteNorthwind\\Northwind.Services.EntityFrameworkCore\\Northwind.Services.EntityFrameworkCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\strel\\source\\repos\\Northwind.Services.EntityFrameworkCore\\Northwind.Services.EntityFrameworkCore.csproj",
+        "projectUniqueName": "D:\\EpamTraining\\Northwind\\CompleteNorthwind\\Northwind.Services.EntityFrameworkCore\\Northwind.Services.EntityFrameworkCore.csproj",
         "projectName": "Northwind.Services.EntityFrameworkCore",
-        "projectPath": "C:\\Users\\strel\\source\\repos\\Northwind.Services.EntityFrameworkCore\\Northwind.Services.EntityFrameworkCore.csproj",
+        "projectPath": "D:\\EpamTraining\\Northwind\\CompleteNorthwind\\Northwind.Services.EntityFrameworkCore\\Northwind.Services.EntityFrameworkCore.csproj",
         "packagesPath": "C:\\Users\\strel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\strel\\source\\repos\\Northwind.Services.EntityFrameworkCore\\obj\\",
+        "outputPath": "D:\\EpamTraining\\Northwind\\CompleteNorthwind\\Northwind.Services.EntityFrameworkCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\strel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\strel\\source\\repos\\Nortwind.Services\\Northwind.Services.csproj": {
-                "projectPath": "C:\\Users\\strel\\source\\repos\\Nortwind.Services\\Northwind.Services.csproj"
+              "D:\\EpamTraining\\Northwind\\CompleteNorthwind\\Northwind.Services\\Northwind.Services.csproj": {
+                "projectPath": "D:\\EpamTraining\\Northwind\\CompleteNorthwind\\Northwind.Services\\Northwind.Services.csproj"
               }
             }
           }
@@ -44,6 +44,18 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[5.0.9, )"
@@ -51,6 +63,12 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.9, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
             }
           },
           "imports": [
@@ -72,14 +90,14 @@
         }
       }
     },
-    "C:\\Users\\strel\\source\\repos\\Nortwind.Services\\Northwind.Services.csproj": {
+    "D:\\EpamTraining\\Northwind\\CompleteNorthwind\\Northwind.Services\\Northwind.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\strel\\source\\repos\\Nortwind.Services\\Northwind.Services.csproj",
+        "projectUniqueName": "D:\\EpamTraining\\Northwind\\CompleteNorthwind\\Northwind.Services\\Northwind.Services.csproj",
         "projectName": "Northwind.Services",
-        "projectPath": "C:\\Users\\strel\\source\\repos\\Nortwind.Services\\Northwind.Services.csproj",
+        "projectPath": "D:\\EpamTraining\\Northwind\\CompleteNorthwind\\Northwind.Services\\Northwind.Services.csproj",
         "packagesPath": "C:\\Users\\strel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\strel\\source\\repos\\Nortwind.Services\\obj\\",
+        "outputPath": "D:\\EpamTraining\\Northwind\\CompleteNorthwind\\Northwind.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\strel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -115,6 +133,10 @@
               "version": "[3.3.2, )"
             },
             "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.9, )"
             },

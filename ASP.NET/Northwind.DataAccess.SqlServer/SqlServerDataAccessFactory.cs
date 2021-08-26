@@ -1,11 +1,14 @@
-﻿// ReSharper disable CheckNamespace
-using System;
-using System.Data.SqlClient;
-using Northwind.DataAccess.Employees;
-using Northwind.DataAccess.Products;
-
+﻿// <copyright file="SqlServerDataAccessFactory.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+// ReSharper disable CheckNamespace
 namespace Northwind.DataAccess
 {
+    using System;
+    using System.Data.SqlClient;
+    using Northwind.DataAccess.Employees;
+    using Northwind.DataAccess.Products;
+
     /// <summary>
     /// Represents an abstract factory for creating Northwind DAO for SQL Server.
     /// </summary>

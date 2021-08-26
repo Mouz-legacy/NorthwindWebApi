@@ -1,9 +1,15 @@
-﻿namespace Nortwind.Services.EntityFrameworkCore.Services
+﻿// <copyright file="ProductCategoryManagementService.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+
+namespace Nortwind.Services.EntityFrameworkCore.Services
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using Nortwind.Services.Products;
+    using System.Threading.Tasks;
+    using Northwind.Services.EntityFrameworkCore.Context;
+    using Northwind.Services.Products;
 
     /// <summary>
     /// Represents a product category management service.
@@ -22,35 +28,35 @@
         }
 
         /// <inheritdoc/>
-        public int CreateCategory(ProductCategory productCategory)
+        public async Task<int> CreateCategoryAsync(Category productCategory)
         {
             if (productCategory is null)
             {
                 return -1;
             }
 
-            if (this.context.ProductCategories.Any())
+            if (this.context.Categories.Any())
             {
-                productCategory.Id = this.context.ProductCategories.Max(c => c.Id) + 1;
+                productCategory.CategoryId = this.context.Categories.Max(c => c.CategoryId) + 1;
             }
             else
             {
-                productCategory.Id = 0;
+                productCategory.CategoryId = 0;
             }
 
-            this.context.ProductCategories.Add(productCategory);
-            this.context.SaveChanges();
-            return productCategory.Id;
+            this.context.Categories.Add(productCategory);
+            await this.context.SaveChangesAsync().ConfigureAwait(true);
+            return productCategory.CategoryId;
         }
 
         /// <inheritdoc/>
-        public bool DestroyCategory(int categoryId)
+        public async Task<bool> DestroyCategoryAsync(int categoryId)
         {
-            var category = this.context.ProductCategories.Find(categoryId);
+            var category = await this.context.Categories.FindAsync(categoryId).ConfigureAwait(true);
             if (category is not null)
             {
-                this.context.ProductCategories.Remove(category);
-                this.context.SaveChanges();
+                this.context.Categories.Remove(category);
+                await this.context.SaveChangesAsync().ConfigureAwait(true);
                 return true;
             }
             else
@@ -60,38 +66,38 @@
         }
 
         /// <inheritdoc/>
-        public IList<ProductCategory> LookupCategoriesByName(IList<string> names)
+        public Task<IList<Category>> LookupCategoriesByNameAsync(IList<string> names)
         {
             throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
-        public IList<ProductCategory> ShowCategories(int offset, int limit)
+        public async Task<IList<Category>> ShowCategoriesAsync(int offset, int limit)
         {
-            return this.context.ProductCategories.Where(c => c.Id >= offset).Take(limit).ToList();
+            return this.context.Categories.Where(c => c.CategoryId >= offset).Take(limit).ToList();
         }
 
         /// <inheritdoc/>
-        public bool TryShowCategory(int categoryId, out ProductCategory productCategory)
+        public bool TryShowCategory(int categoryId, out Category productCategory)
         {
-            productCategory = this.context.ProductCategories.Find(categoryId);
+            productCategory = this.context.Categories.Find(categoryId);
             return productCategory is not null;
         }
 
         /// <inheritdoc/>
-        public bool UpdateCategories(int categoryId, ProductCategory productCategory)
+        public async Task<bool> UpdateCategoriesAsync(int categoryId, Category productCategory)
         {
             if (productCategory is null)
             {
                 throw new ArgumentNullException(nameof(productCategory));
             }
 
-            var category = this.context.ProductCategories.Single(c => c.Id == categoryId);
+            var category = this.context.Categories.Single(c => c.CategoryId == categoryId);
             if (category is not null)
             {
-                category.Name = productCategory.Name;
+                category.CategoryName = productCategory.CategoryName;
                 category.Description = productCategory.Description;
-                this.context.SaveChanges();
+                await this.context.SaveChangesAsync().ConfigureAwait(true);
                 return true;
             }
             else

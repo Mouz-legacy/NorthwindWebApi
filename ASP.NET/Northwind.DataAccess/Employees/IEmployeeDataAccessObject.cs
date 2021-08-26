@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Northwind.DataAccess.Employees
 {
@@ -14,21 +15,21 @@ namespace Northwind.DataAccess.Employees
         /// </summary>
         /// <param name="employee">Employee.</param>
         /// <returns>Employee id.</returns>
-        int InsertEmployee(EmployeeTransferObject employee);
+        Task<int> InsertEmployeeAsync(EmployeeTransferObject employee);
 
         /// <summary>
         /// DeleteEmployee method.
         /// </summary>
         /// <param name="employeeId"></param>
         /// <returns></returns>
-        bool DeleteEmployee(int employeeId);
+        Task<bool> DeleteEmployeeAsync(int employeeId);
 
         /// <summary>
         /// UpdateEmployee method.
         /// </summary>
         /// <param name="employee">Employee.</param>
         /// <returns>True, if employee was updated.</returns>
-        bool UpdateEmployee(EmployeeTransferObject employee);
+        Task<bool> UpdateEmployeeAsync(EmployeeTransferObject employee);
 
         /// <summary>
         /// FindEmployee method.
@@ -43,6 +44,6 @@ namespace Northwind.DataAccess.Employees
         /// <param name="offset">Offset.</param>
         /// <param name="limit">Max limit of employees.</param>
         /// <returns>List of employees.</returns>
-        IList<EmployeeTransferObject> SelectEmployees(int offset, int limit);
+        Task<IList<EmployeeTransferObject>> SelectEmployeesAsync(int offset, int limit);
     }
 }

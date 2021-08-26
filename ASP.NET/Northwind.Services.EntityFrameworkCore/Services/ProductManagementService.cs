@@ -7,6 +7,8 @@ namespace Nortwind.Services.EntityFrameworkCore.Services
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Threading.Tasks;
+    using Northwind.Services.EntityFrameworkCore.Context;
     using Northwind.Services.Products;
 
     /// <summary>
@@ -26,7 +28,7 @@ namespace Nortwind.Services.EntityFrameworkCore.Services
         }
 
         /// <inheritdoc/>
-        public int CreateProduct(Product product)
+        public async Task<int> CreateProductAsync(Product product)
         {
             if (product is null)
             {
@@ -35,26 +37,26 @@ namespace Nortwind.Services.EntityFrameworkCore.Services
 
             if (this.context.Products.Any())
             {
-                product.Id = this.context.Products.Max(p => p.Id) + 1;
+                product.ProductId = this.context.Products.Max(p => p.ProductId) + 1;
             }
             else
             {
-                product.Id = 0;
+                product.ProductId = 0;
             }
 
             this.context.Products.Add(product);
-            this.context.SaveChanges();
-            return product.Id;
+            await this.context.SaveChangesAsync().ConfigureAwait(true);
+            return product.ProductId;
         }
 
         /// <inheritdoc/>
-        public bool DestroyProduct(int productId)
+        public async Task<bool> DestroyProductAsync(int productId)
         {
-            var product = this.context.Products.Find(productId);
+            var product = await this.context.Products.FindAsync(productId).ConfigureAwait(true);
             if (product is not null)
             {
                 this.context.Products.Remove(product);
-                this.context.SaveChanges();
+                await this.context.SaveChangesAsync().ConfigureAwait(true);
                 return true;
             }
             else
@@ -64,19 +66,19 @@ namespace Nortwind.Services.EntityFrameworkCore.Services
         }
 
         /// <inheritdoc/>
-        public IList<Product> LookupProductsByName(IList<string> names)
+        public Task<IList<Product>> LookupProductsByNameAsync(IList<string> names)
         {
             throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
-        public IList<Product> ShowProducts(int offset, int limit)
+        public async Task<IList<Product>> ShowProductsAsync(int offset, int limit)
         {
-            return this.context.Products.Where(p => p.Id >= offset).Take(limit).ToList();
+            return this.context.Products.Where(p => p.ProductId >= offset).Take(limit).ToList();
         }
 
         /// <inheritdoc/>
-        public IList<Product> ShowProductsForCategory(int categoryId)
+        public Task<IList<Product>> ShowProductsForCategoryAsync(int categoryId)
         {
             throw new NotImplementedException();
         }
@@ -89,17 +91,17 @@ namespace Nortwind.Services.EntityFrameworkCore.Services
         }
 
         /// <inheritdoc/>
-        public bool UpdateProduct(int productId, Product product)
+        public async Task<bool> UpdateProductAsync(int productId, Product product)
         {
             if (product is null)
             {
                 throw new ArgumentNullException(nameof(product));
             }
 
-            var newProduct = this.context.Products.Single(c => c.Id == productId);
+            var newProduct = this.context.Products.Single(c => c.ProductId == productId);
             if (newProduct is not null)
             {
-                newProduct.Name = product.Name;
+                newProduct.ProductName = product.ProductName;
                 newProduct.SupplierId = product.SupplierId;
                 newProduct.CategoryId = product.CategoryId;
                 newProduct.QuantityPerUnit = product.QuantityPerUnit;
@@ -108,7 +110,7 @@ namespace Nortwind.Services.EntityFrameworkCore.Services
                 newProduct.UnitsOnOrder = product.UnitsOnOrder;
                 newProduct.ReorderLevel = product.ReorderLevel;
                 newProduct.Discontinued = product.Discontinued;
-                this.context.SaveChanges();
+                await this.context.SaveChangesAsync().ConfigureAwait(true);
                 return true;
             }
             else

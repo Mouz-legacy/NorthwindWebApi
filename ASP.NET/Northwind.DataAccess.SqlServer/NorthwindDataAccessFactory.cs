@@ -1,8 +1,12 @@
-﻿using Northwind.DataAccess.Employees;
-using Northwind.DataAccess.Products;
+﻿// <copyright file="NorthwindDataAccessFactory.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
 namespace Northwind.DataAccess
 {
+    using Northwind.DataAccess.Employees;
+    using Northwind.DataAccess.Products;
+
     /// <summary>
     /// Represents an abstract factory for creating Northwind DAO.
     /// </summary>
